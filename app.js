@@ -9,11 +9,13 @@
   const closeButton = document.getElementById('close-lightbox');
   const previousButton = document.getElementById('previous-artwork');
   const nextButton = document.getElementById('next-artwork');
+  const materials = document.getElementById('dialog-materials');
+  let activeWorks = works.filter(work => (work.scope || 'selected') === 'selected');
   let activeIndex = 0;
   let opener = null;
 
   function renderArtwork() {
-    const work = works[activeIndex];
+    const work = activeWorks[activeIndex];
     if (!work) return;
     image.hidden = false;
     error.hidden = true;
@@ -21,24 +23,29 @@
     image.src = work.src;
     document.getElementById('dialog-title').textContent = work.title;
     document.getElementById('dialog-description').textContent = work.caption || '';
-    document.getElementById('dialog-counter').textContent = `${String(activeIndex + 1).padStart(2,'0')} / ${String(works.length).padStart(2,'0')}`;
+    materials.hidden = !work.materials;
+    materials.textContent = work.materials ? `Materials: ${work.materials}` : '';
+    document.getElementById('dialog-counter').textContent = `${String(activeIndex + 1).padStart(2,'0')} / ${String(activeWorks.length).padStart(2,'0')}`;
     const fullImageLink = document.getElementById('full-image-link');
     fullImageLink.href = work.src;
-    document.getElementById('lightbox-status').textContent = `${work.title}, artwork ${activeIndex + 1} of ${works.length}.`;
-    previousButton.disabled = works.length < 2;
-    nextButton.disabled = works.length < 2;
+    document.getElementById('lightbox-status').textContent = `${work.title}, artwork ${activeIndex + 1} of ${activeWorks.length}.`;
+    previousButton.disabled = activeWorks.length < 2;
+    nextButton.disabled = activeWorks.length < 2;
   }
 
   function move(direction) {
-    activeIndex = (activeIndex + direction + works.length) % works.length;
+    activeIndex = (activeIndex + direction + activeWorks.length) % activeWorks.length;
     renderArtwork();
   }
 
   document.querySelectorAll('.artwork-link').forEach(link => {
     link.addEventListener('click', event => {
       if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const index = works.findIndex(work => work.id === link.dataset.artworkId);
-      if (index < 0) return;
+      const selected = works.find(work => work.id === link.dataset.artworkId);
+      if (!selected) return;
+      const scope = selected.scope || 'selected';
+      activeWorks = works.filter(work => (work.scope || 'selected') === scope);
+      const index = activeWorks.findIndex(work => work.id === selected.id);
       event.preventDefault();
       activeIndex = index;
       opener = link;

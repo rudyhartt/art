@@ -1,16 +1,17 @@
 # Rudy Hartt — portfolio V2
 
-A static artist portfolio on black, with nine images arranged in the supplied reference's order, relative sizes and desktop positions. No build step or external dependency is required.
+A static artist portfolio on black, with nine images arranged in the supplied reference's order and a featured six-image collection, **Friends Stitch the Broken Sun**. No build step or external dependency is required.
 
 ## Site files
 
-- `index.html` includes all nine artworks as semantic HTML images and links. The gallery remains usable without JavaScript.
-- `styles.css` preserves the desktop composition in a fluid canvas up to 1680px wide. Below 700px, the images flow in source order at 76–90% of the viewport width with alternating alignment.
+- `index.html` includes all fifteen artworks and the collection cover as semantic HTML images and links. The gallery remains usable without JavaScript.
+- `styles.css` preserves the original artwork sizes and staggered positions in two fluid canvases up to 1680px wide. The collection sits after the first three original images; images 4–9 continue after it. Each canvas uses rebased source coordinates to keep the existing artwork proportions.
+- The featured collection uses a square cover on the left and six square thumbnails in three columns and two rows on the right at 1100px and above. The cover sits above the thumbnails below that width. Below 700px, thumbnails use two columns, and the original artworks flow at 76–90% of viewport width with alternating alignment.
 - `app.js` adds a native dialog viewer with previous/next buttons, arrow keys, Escape-to-close and focus return. If JavaScript or native dialog support is unavailable, each artwork link opens the full image directly.
-- `artworks-data.js` provides the image viewer with public image paths and descriptive alt text. It contains no source-file metadata.
+- `artworks-data.js` provides the image viewer with public image paths, descriptive alt text and navigation scopes. The original gallery browses nine images; the featured collection browses its six full images. The cover opens independently. It contains no source-file metadata.
 - `assets/` contains WebP images at native resolution and responsive derivatives, with no upscaling.
 
-Images retain their full original compositions. Source images are never cropped. The gallery has no visible captions or invented artwork titles; the viewer uses image numbers and plain visual descriptions.
+The original gallery and full-size viewer retain each artwork's complete composition. The six collection thumbnails use prepared square previews; selecting one reveals the full portrait image. The featured collection has visible titles and a materials line reading **Materials: AI-assisted digital image**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
 
 ## Preview
 

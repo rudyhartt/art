@@ -122,7 +122,7 @@ figure,h1,h2,p{margin:0}
 .external-logo-link{display:flex;align-items:center;justify-content:center;min-width:0;min-height:150px;padding:12px;text-align:center}
 .external-logo{display:block;object-fit:contain;width:100%;height:80px;max-width:220px}
 .external-logo-link:hover .external-logo,.external-logo-link:hover .external-ma-wordmark{opacity:.75}
-.external-logo-raster{filter:grayscale(1) contrast(1.1) invert(1);mix-blend-mode:screen}
+.external-logo-raster{filter:none;mix-blend-mode:normal}
 .external-ma-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;max-width:220px;height:120px}
 .external-logo-mahacks{height:90px;filter:brightness(0) invert(1)}
 .external-ma-wordmark{font-family:"Courier New",monospace;font-size:16px;font-weight:300;letter-spacing:.12em;line-height:1;color:#fff;white-space:nowrap}
@@ -141,12 +141,12 @@ figure,h1,h2,p{margin:0}
 .moments-thread-ribbon{stroke:#405f9d;stroke-width:13;opacity:.9}
 .moments-thread-highlight{stroke:#a3bbdf;stroke-width:1.2;opacity:.65}
 .moment-ribbon{position:absolute;z-index:3;left:-7%;bottom:clamp(14px,2.3vw,34px);width:114%;display:flex;align-items:center;gap:16px;padding:15px 24px;background:linear-gradient(112deg,#c4d2e6 0%,#f2eee5 28%,#e8edf3 78%,#b3c5e1 100%);color:#17233b;transform:rotate(-3deg);box-shadow:0 7px 18px #0005;clip-path:polygon(0 0,100% 0,97.5% 50%,100% 100%,0 100%,2.5% 50%);pointer-events:none}
-.work:nth-of-type(even) .moment-ribbon{transform:rotate(3deg)}
+.work:nth-of-type(even) .moment-ribbon,.work[data-order="8"] .moment-ribbon{transform:rotate(3deg)}
 .moment-number{flex:none;font-size:8px;line-height:1.4;letter-spacing:.12em;font-weight:400}
 .moment-number b{display:block;font-size:20px;line-height:1.1;letter-spacing:-.05em;font-weight:400}
 .moment-story{display:block;font-size:clamp(12px,1.02vw,15px);line-height:1.45;letter-spacing:-.015em;text-wrap:pretty}
 @media(min-width:700px) and (max-width:1000px){.moment-ribbon{gap:9px;padding:11px 17px}.moment-number{font-size:7px}.moment-number b{font-size:17px}.moment-story{font-size:11px}}
-@media(max-width:699px){.moment-ribbon{position:relative;min-height:66px;left:0;bottom:auto;width:100%;margin-top:-23px;padding:13px 20px;gap:13px;transform:rotate(-2deg)}.work:nth-of-type(even) .moment-ribbon{transform:rotate(2deg)}.moment-story{font-size:12px;line-height:1.5}.moment-number{font-size:7px}.moment-number b{font-size:18px}.moments-thread-shadow{stroke-width:13}.moments-thread-ribbon{stroke-width:8}.moments-thread-highlight{stroke-width:.8}}
+@media(max-width:699px){.moment-ribbon{position:relative;min-height:66px;left:0;bottom:auto;width:100%;margin-top:-23px;padding:13px 20px;gap:13px;transform:rotate(-2deg)}.work:nth-of-type(even) .moment-ribbon,.work[data-order="8"] .moment-ribbon{transform:rotate(2deg)}.moment-story{font-size:12px;line-height:1.5}.moment-number{font-size:7px}.moment-number b{font-size:18px}.moments-thread-shadow{stroke-width:13}.moments-thread-ribbon{stroke-width:8}.moments-thread-highlight{stroke-width:.8}}
 @media(max-width:359px){.moment-ribbon{padding:12px 16px;gap:10px}.moment-story{font-size:11px}}
 
 
@@ -184,8 +184,7 @@ button.artwork-link{border:0;padding:0;color:inherit;font:inherit;text-align:inh
 .header-store:disabled:hover{color:var(--muted)}
 /* White treatments retain the supplied logo geometry; screen removes matte backgrounds. */
 .external-logo-waowi{filter:grayscale(1) brightness(4) contrast(20) invert(1);mix-blend-mode:screen}
-.external-logo-rudys{filter:grayscale(1) contrast(12) invert(1);mix-blend-mode:screen}
-.external-logo-symb10{filter:grayscale(1) contrast(1.1);mix-blend-mode:screen}
+.external-logo-rudys,.external-logo-symb10{filter:none;mix-blend-mode:normal}
 .external-logo-personal{height:145px;max-width:210px}
 .external-logo-static:hover .external-logo{opacity:1}
 @media(max-width:699px){.external-logo-personal{height:82px;max-width:120px}}

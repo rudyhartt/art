@@ -4,7 +4,7 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:25px}
-body{margin:0;min-width:280px;background:var(--black)}
+body{position:relative;isolation:isolate;margin:0;min-width:280px;background:var(--black)}
 body.lightbox-open{overflow:hidden}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -121,7 +121,7 @@ figure,h1,h2,p{margin:0}
 .external-logo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:85px;row-gap:80px;align-items:center;max-width:920px;margin:0 auto}
 .external-logo-link{display:flex;align-items:center;justify-content:center;min-width:0;min-height:150px;padding:12px;text-align:center}
 .external-logo{display:block;object-fit:contain;width:100%;height:80px;max-width:220px}
-.external-logo-link:hover{opacity:.75}
+.external-logo-link:hover .external-logo,.external-logo-link:hover .external-ma-wordmark{opacity:.75}
 .external-logo-raster{filter:grayscale(1) contrast(1.1) invert(1);mix-blend-mode:screen}
 .external-ma-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;max-width:220px;height:120px}
 .external-logo-mahacks{height:90px;filter:brightness(0) invert(1)}
@@ -134,7 +134,7 @@ figure,h1,h2,p{margin:0}
 
 
 /* MOMENTS: a blue ribbon carries one story through the nine original works. */
-.moments-canvas{position:relative;isolation:isolate}
+.moments-canvas{position:relative}
 .moments-thread{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;overflow:hidden}
 .moments-thread path{fill:none;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
 .moments-thread-shadow{stroke:#102344;stroke-width:20;opacity:.7}
@@ -148,3 +148,20 @@ figure,h1,h2,p{margin:0}
 @media(min-width:700px) and (max-width:1000px){.moment-ribbon{gap:9px;padding:11px 17px}.moment-number{font-size:7px}.moment-number b{font-size:17px}.moment-story{font-size:11px}}
 @media(max-width:699px){.moment-ribbon{position:relative;min-height:66px;left:0;bottom:auto;width:100%;margin-top:-23px;padding:13px 20px;gap:13px;transform:rotate(-2deg)}.work:nth-of-type(even) .moment-ribbon{transform:rotate(2deg)}.moment-story{font-size:12px;line-height:1.5}.moment-number{font-size:7px}.moment-number b{font-size:18px}.moments-thread-shadow{stroke-width:13}.moments-thread-ribbon{stroke-width:8}.moments-thread-highlight{stroke-width:.8}}
 @media(max-width:359px){.moment-ribbon{padding:12px 16px;gap:10px}.moment-story{font-size:11px}}
+
+
+/* Slow charcoal waves sit behind the portfolio without intercepting input. */
+.ambient-background{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#000}
+.ambient-background::before,.ambient-background::after{content:"";position:absolute;inset:-16%;background:url("assets/ambient-waves.svg") center / cover no-repeat;pointer-events:none;transform-origin:center;will-change:transform}
+.ambient-background::before{opacity:.95;animation:ambient-drift 36s ease-in-out infinite alternate}
+.ambient-background::after{opacity:.4;animation:ambient-counter-drift 48s ease-in-out infinite alternate}
+@keyframes ambient-drift{from{transform:translate3d(-2%,2%,0) scale(1.03) rotate(-2deg)}to{transform:translate3d(2%,-2%,0) scale(1.12) rotate(2deg)}}
+@keyframes ambient-counter-drift{from{transform:translate3d(3%,-3%,0) scale(1.08) rotate(178deg)}to{transform:translate3d(-2%,3%,0) scale(1.15) rotate(182deg)}}
+@media(max-width:699px){.ambient-background::before{inset:-12%;background-size:auto 120%;animation-duration:42s}.ambient-background::after{display:none}}
+@media(prefers-reduced-motion:reduce){.ambient-background::before,.ambient-background::after{animation:none;will-change:auto}.ambient-background::before{transform:scale(1.08)}.ambient-background::after{transform:rotate(180deg) scale(1.08)}}
+
+
+/* Royal crests need more vertical room than horizontal wordmarks. */
+.external-logo-royal{height:130px;max-width:190px}
+@media(max-width:699px){.external-logo-royal{height:72px;max-width:110px}}
+@media(max-width:359px){.external-logo-royal{height:64px}}

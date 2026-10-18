@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" aria-hidden="true">
+  <defs>
+    <linearGradient id="upper-fold" x1="760" y1="-100" x2="920" y2="610" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset=".18" stop-color="#050505" stop-opacity=".2"/>
+      <stop offset=".4" stop-color="#0d0d0d" stop-opacity=".6"/>
+      <stop offset=".58" stop-color="#161616" stop-opacity=".85"/>
+      <stop offset=".73" stop-color="#0c0c0c" stop-opacity=".6"/>
+      <stop offset=".9" stop-color="#030303" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="middle-fold" x1="630" y1="240" x2="910" y2="970" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#050505" stop-opacity=".25"/>
+      <stop offset=".43" stop-color="#111111" stop-opacity=".7"/>
+      <stop offset=".57" stop-color="#161616" stop-opacity=".8"/>
+      <stop offset=".74" stop-color="#0a0a0a" stop-opacity=".55"/>
+      <stop offset=".92" stop-color="#020202" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lower-fold" x1="700" y1="550" x2="1050" y2="1280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#070707" stop-opacity=".3"/>
+      <stop offset=".46" stop-color="#141414" stop-opacity=".75"/>
+      <stop offset=".6" stop-color="#101010" stop-opacity=".65"/>
+      <stop offset=".8" stop-color="#050505" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#upper-fold)" d="M-240 300C110 335 180-50 530-80C890-110 1100 340 1840 65L1840 490C1250 680 975 300 660 250C290 190 165 600-240 650Z"/>
+  <path fill="url(#middle-fold)" d="M-240 650C130 780 330 355 660 315C1020 270 1185 715 1840 395L1840 870C1290 1080 1040 660 765 625C380 575 190 1015-240 1010Z"/>
+  <path fill="url(#lower-fold)" d="M-240 1015C210 1120 440 635 810 640C1195 645 1290 1000 1840 820L1840 1320C1290 1490 1085 990 860 985C510 975 245 1410-240 1400Z"/>
+</svg>

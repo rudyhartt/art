@@ -151,7 +151,7 @@ figure,h1,h2,p{margin:0}
 
 
 /* Slow charcoal waves sit behind the portfolio without intercepting input. */
-.ambient-background{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#000;opacity:.12}
+.ambient-background{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#000;opacity:.55}
 .site-header,.footer{position:relative}
 .ambient-background::before,.ambient-background::after{content:"";position:absolute;inset:-16%;background:url("assets/ambient-waves.svg?v=4a6cfb60e33a") center / cover no-repeat;pointer-events:none;transform-origin:center;will-change:transform}
 .ambient-background::before{opacity:1;animation:ambient-drift 24s ease-in-out infinite alternate}

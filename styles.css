@@ -176,3 +176,27 @@ figure,h1,h2,p{margin:0}
 
 /* Give the final collection breathing room below the last MOMENTS artwork. */
 @media(max-width:699px){.collection-section-final{margin-top:70px}}
+
+/* Artwork buttons preserve the gallery layout without exposing file links. */
+button.artwork-link{border:0;padding:0;color:inherit;font:inherit;text-align:inherit;border-radius:0;appearance:none}
+.header-store{border:0;background:transparent;appearance:none}
+.header-store:disabled{opacity:.4;cursor:default}
+.header-store:disabled:hover{color:var(--muted)}
+/* White treatments retain the supplied logo geometry; screen removes matte backgrounds. */
+.external-logo-waowi{filter:grayscale(1) brightness(4) contrast(20) invert(1);mix-blend-mode:screen}
+.external-logo-rudys{filter:grayscale(1) contrast(12) invert(1);mix-blend-mode:screen}
+.external-logo-symb10{filter:grayscale(1) contrast(1.1);mix-blend-mode:screen}
+.external-logo-personal{height:145px;max-width:210px}
+.external-logo-static:hover .external-logo{opacity:1}
+@media(max-width:699px){.external-logo-personal{height:82px;max-width:120px}}
+@media(max-width:359px){.external-logo-personal{height:72px;max-width:105px}}
+
+/* Gentle viewer transitions; image restrictions are interaction deterrents. */
+.artwork-dialog{opacity:0;transition:opacity 200ms ease}
+.artwork-dialog.is-visible{opacity:1}
+.artwork-dialog::backdrop{opacity:0;transition:opacity 200ms ease}
+.artwork-dialog.is-visible::backdrop{opacity:1}
+.lightbox-image-wrap,.lightbox-caption{opacity:1;transition:opacity 200ms ease}
+.artwork-dialog.is-changing .lightbox-image-wrap,.artwork-dialog.is-changing .lightbox-caption{opacity:0}
+img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
+@media(prefers-reduced-motion:reduce){.artwork-dialog,.artwork-dialog::backdrop,.lightbox-image-wrap,.lightbox-caption{transition:none}}

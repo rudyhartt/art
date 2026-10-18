@@ -96,7 +96,7 @@ window.ARTWORKS = [
     "src": "assets/collection-01.webp",
     "alt": "A white teardrop-headed character reaches toward a curling blue light trail amid torn-paper buildings.",
     "caption": "A white teardrop-headed character reaches toward a curling blue light trail amid torn-paper buildings.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, wood, resin, cotton, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -107,7 +107,7 @@ window.ARTWORKS = [
     "src": "assets/collection-02.webp",
     "alt": "A fuzzy black character with mismatched eyes tends glowing pink flowers beneath looping blue light.",
     "caption": "A fuzzy black character with mismatched eyes tends glowing pink flowers beneath looping blue light.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, faux fur, fabric, wire, resin, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -118,7 +118,7 @@ window.ARTWORKS = [
     "src": "assets/collection-03.webp",
     "alt": "A purple square-headed character with a blue loop tumbles through coral light trails in a collage city.",
     "caption": "A purple square-headed character with a blue loop tumbles through coral light trails in a collage city.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, resin, fabric, wire, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -129,7 +129,7 @@ window.ARTWORKS = [
     "src": "assets/collection-04.webp",
     "alt": "A red knotted character sits on a broken ledge, cradling a glowing sphere between its hands.",
     "caption": "A red knotted character sits on a broken ledge, cradling a glowing sphere between its hands.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, concrete, rope, fabric, wire, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -140,7 +140,7 @@ window.ARTWORKS = [
     "src": "assets/collection-05.webp",
     "alt": "A turquoise folded character with an orange ruff drifts along a paper boat through a fragmented city and pale currents.",
     "caption": "A turquoise folded character with an orange ruff drifts along a paper boat through a fragmented city and pale currents.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, resin, fabric, wire, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -151,7 +151,7 @@ window.ARTWORKS = [
     "src": "assets/collection-06.webp",
     "alt": "A yellow triangular character steps between torn architectural fragments and vivid magenta light trails.",
     "caption": "A yellow triangular character steps between torn architectural fragments and vivid magenta light trails.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, wood, concrete, wire, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -162,7 +162,7 @@ window.ARTWORKS = [
     "src": "assets/collection-cover.webp",
     "alt": "Six fantastical characters gather in a torn-paper city around a fractured glowing sun and intertwined trails of light.",
     "caption": "Six fantastical characters gather in a torn-paper city around a fractured glowing sun and intertwined trails of light.",
-    "materials": "AI-assisted digital image",
+    "materials": "AI, paper, wood, resin, fabric, wire, LEDs",
     "width": 1254,
     "height": 1254,
     "scope": "collection-cover"

@@ -24,7 +24,7 @@
     document.getElementById('dialog-title').textContent = work.title;
     document.getElementById('dialog-description').textContent = work.caption || '';
     materials.hidden = !work.materials;
-    materials.textContent = work.materials ? `Materials: ${work.materials}` : '';
+    materials.textContent = work.materials || '';
     document.getElementById('dialog-counter').textContent = `${String(activeIndex + 1).padStart(2,'0')} / ${String(activeWorks.length).padStart(2,'0')}`;
     const fullImageLink = document.getElementById('full-image-link');
     fullImageLink.href = work.src;

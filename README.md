@@ -11,7 +11,7 @@ A static artist portfolio on black, with nine images arranged in the supplied re
 - `artworks-data.js` provides the image viewer with public image paths, descriptive alt text and navigation scopes. The original gallery browses nine images; the featured collection browses its six full images. The cover opens independently. It contains no source-file metadata.
 - `assets/` contains WebP images at native resolution and responsive derivatives, with no upscaling.
 
-The original gallery and full-size viewer retain each artwork's complete composition. The six collection thumbnails use prepared square previews; selecting one reveals the full portrait image. The featured collection has visible titles and a materials line reading **Materials: AI-assisted digital image**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
+The original gallery and full-size viewer retain each artwork's complete composition. The six collection thumbnails use prepared square previews; selecting one reveals the full portrait image. The featured collection has visible titles and comma-separated materials lists beginning with **AI**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
 
 ## Preview
 

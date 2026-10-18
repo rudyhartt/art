@@ -50,9 +50,13 @@ If replacing an existing site, review and preserve any existing source you need 
 
 The site has no visitor tracking, forms, mailing lists or third-party embeds.
 
-## Delivery status
+## Live portfolio and validation
 
-The 24-artwork collection and static source files are complete. Image integrity, asset references, aspect ratios, HTML IDs, JavaScript syntax, and the portable preview packaging were checked. Browser rendering was not available in the creation session. The source is maintained in `rudyhartt/art`. GitHub Pages deployment is configured through GitHub Actions. Changes to any previous websites and domain settings are managed separately.
+Live site: https://rudyhartt.github.io/art/
+
+Source repository: https://github.com/rudyhartt/art
+
+The 24-artwork collection is published through GitHub Actions. Image integrity, asset references, aspect ratios, HTML IDs and JavaScript syntax were checked. The live page, collection filtering, full-size artwork loading, next-artwork navigation, Escape-to-close and focus restoration were verified in a browser.
 
 Workflow reference: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 

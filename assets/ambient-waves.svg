@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1000" viewBox="0 0 1600 1000" aria-hidden="true">
   <defs>
     <linearGradient id="upper-fold" x1="760" y1="-100" x2="920" y2="610" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#000000" stop-opacity="0"/>
@@ -26,8 +26,13 @@
       <stop offset=".8" stop-color="#111111" stop-opacity=".35"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
+    <g id="wave-forms">
+      <path fill="url(#upper-fold)" d="M-240 300C110 335 180-50 530-80C890-110 1100 340 1840 65L1840 490C1250 680 975 300 660 250C290 190 165 600-240 650Z"/>
+      <path fill="url(#middle-fold)" d="M-240 650C130 780 330 355 660 315C1020 270 1185 715 1840 395L1840 870C1290 1080 1040 660 765 625C380 575 190 1015-240 1010Z"/>
+      <path fill="url(#lower-fold)" d="M-240 1015C210 1120 440 635 810 640C1195 645 1290 1000 1840 820L1840 1320C1290 1490 1085 990 860 985C510 975 245 1410-240 1400Z"/>
+    </g>
   </defs>
-  <path fill="url(#upper-fold)" d="M-240 300C110 335 180-50 530-80C890-110 1100 340 1840 65L1840 490C1250 680 975 300 660 250C290 190 165 600-240 650Z"/>
-  <path fill="url(#middle-fold)" d="M-240 650C130 780 330 355 660 315C1020 270 1185 715 1840 395L1840 870C1290 1080 1040 660 765 625C380 575 190 1015-240 1010Z"/>
-  <path fill="url(#lower-fold)" d="M-240 1015C210 1120 440 635 810 640C1195 645 1290 1000 1840 820L1840 1320C1290 1490 1085 990 860 985C510 975 245 1410-240 1400Z"/>
+  <use href="#wave-forms" xlink:href="#wave-forms" transform="translate(0 -1000)"/>
+  <use href="#wave-forms" xlink:href="#wave-forms"/>
+  <use href="#wave-forms" xlink:href="#wave-forms" transform="translate(0 1000)"/>
 </svg>

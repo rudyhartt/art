@@ -70,3 +70,41 @@
   dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
   image.addEventListener('error', () => { image.hidden = true; error.hidden = false; });
 })();
+
+/* The repeating waves travel with the scroll, independently of their slow drift. */
+(() => {
+  'use strict';
+  const background = document.querySelector('.ambient-background');
+  if (!background) return;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let frame = 0;
+
+  function updatePosition() {
+    frame = 0;
+    const scroll = Math.max(0, window.scrollY);
+    background.style.setProperty('--wave-scroll-front', `${(-scroll * .45).toFixed(2)}px`);
+    // The rear wave is rotated 180 degrees, so its local offset is reversed.
+    background.style.setProperty('--wave-scroll-back', `${(scroll * .25).toFixed(2)}px`);
+  }
+
+  function scheduleUpdate() {
+    if (!reducedMotion.matches && !frame) frame = window.requestAnimationFrame(updatePosition);
+  }
+
+  function configureMotion() {
+    window.removeEventListener('scroll', scheduleUpdate);
+    if (frame) window.cancelAnimationFrame(frame);
+    frame = 0;
+    if (reducedMotion.matches) {
+      background.style.removeProperty('--wave-scroll-front');
+      background.style.removeProperty('--wave-scroll-back');
+      return;
+    }
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    scheduleUpdate();
+  }
+
+  reducedMotion.addEventListener('change', configureMotion);
+  window.addEventListener('pageshow', scheduleUpdate);
+  configureMotion();
+})();

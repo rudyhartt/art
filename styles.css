@@ -153,13 +153,13 @@ figure,h1,h2,p{margin:0}
 /* Slow charcoal waves sit behind the portfolio without intercepting input. */
 .ambient-background{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#000;opacity:.55}
 .site-header,.footer{position:relative}
-.ambient-background::before,.ambient-background::after{content:"";position:absolute;inset:-16%;background:url("assets/ambient-waves.svg?v=4a6cfb60e33a") center / cover no-repeat;pointer-events:none;transform-origin:center;will-change:transform}
-.ambient-background::before{opacity:1;animation:ambient-drift 24s ease-in-out infinite alternate}
-.ambient-background::after{opacity:.5;animation:ambient-counter-drift 32s ease-in-out infinite alternate}
+.ambient-background::before,.ambient-background::after{content:"";position:absolute;inset:-16%;background:url("assets/ambient-waves.svg?v=01d6bb40d95c") center / cover repeat-y;pointer-events:none;transform-origin:center;will-change:transform}
+.ambient-background::before{opacity:1;background-position:center calc(50% + var(--wave-scroll-front,0px));animation:ambient-drift 24s ease-in-out infinite alternate}
+.ambient-background::after{opacity:.5;background-position:center calc(50% + var(--wave-scroll-back,0px));animation:ambient-counter-drift 32s ease-in-out infinite alternate}
 @keyframes ambient-drift{from{transform:translate3d(-4%,3%,0) scale(1.03) rotate(-3deg)}to{transform:translate3d(4%,-3%,0) scale(1.12) rotate(3deg)}}
 @keyframes ambient-counter-drift{from{transform:translate3d(4%,-4%,0) scale(1.08) rotate(177deg)}to{transform:translate3d(-3%,4%,0) scale(1.15) rotate(183deg)}}
 @media(max-width:699px){.ambient-background::before{inset:-12%;background-size:100% 100%;animation-duration:28s}.ambient-background::after{display:none}}
-@media(prefers-reduced-motion:reduce){.ambient-background::before,.ambient-background::after{animation:none;will-change:auto}.ambient-background::before{transform:scale(1.08)}.ambient-background::after{transform:rotate(180deg) scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.ambient-background::before,.ambient-background::after{animation:none;will-change:auto;background-position:center}.ambient-background::before{transform:scale(1.08)}.ambient-background::after{transform:rotate(180deg) scale(1.08)}}
 
 
 /* Crests and compact institutional marks need more vertical room than wordmarks. */

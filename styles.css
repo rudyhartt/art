@@ -16,11 +16,14 @@ figure,h1,h2,p{margin:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip-link{position:fixed;top:-80px;left:20px;z-index:30;background:var(--white);color:var(--black);padding:12px 18px;font-size:13px}
 .skip-link:focus{top:20px}
-.site-header{min-height:96px;padding:18px var(--edge);display:grid;grid-template-columns:minmax(130px,1fr) auto;align-items:center;gap:25px}
+.site-header{min-height:96px;padding:18px var(--edge);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:25px}
 .artist-name{font-family:"Arial Black",Arial,Helvetica,sans-serif;font-size:18px;font-weight:900;letter-spacing:-.04em;white-space:nowrap;line-height:1.2}
-.header-index{display:flex;align-items:center;justify-content:flex-end;gap:32px;font-size:12px;letter-spacing:.035em;color:var(--muted)}
+.header-index{display:flex;align-items:center;justify-content:center;gap:32px;font-size:12px;letter-spacing:.035em;color:var(--muted)}
 .header-index>a{padding:12px 0}
 .header-index>a:hover{color:var(--white)}
+.header-store{justify-self:end;display:inline-flex;align-items:center;gap:8px;padding:12px 0;font-size:12px;letter-spacing:.035em;color:var(--muted);white-space:nowrap}
+.header-store:hover{color:var(--white)}
+.header-store svg{width:14px;height:14px;flex:none}
 .header-count{color:var(--white);font-variant-numeric:tabular-nums}
 .gallery{position:relative;width:100%;max-width:1680px;margin:0 auto;aspect-ratio:var(--canvas-ratio)}
 .work{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:var(--h);margin:0}
@@ -109,8 +112,8 @@ figure,h1,h2,p{margin:0}
 
 
 @media(min-width:1200px) and (max-width:1299px){.collection-section-four .collection-layout{grid-template-columns:minmax(0,.60fr) minmax(0,.40fr)}}
-@media(max-width:699px){.artist-identity{grid-column:1;grid-row:1}.header-index{grid-column:2;grid-row:1;gap:15px;justify-content:flex-end}.footer-end{gap:18px}}
-@media(max-width:359px){.site-header{grid-template-columns:minmax(0,1fr);row-gap:6px}.artist-identity{grid-column:1;grid-row:1}.header-index{grid-column:1;grid-row:2;justify-content:space-between;gap:12px}}
+@media(max-width:699px){.artist-identity{grid-column:1;grid-row:1}.header-store{grid-column:2;grid-row:1}.header-index{grid-column:1 / -1;grid-row:2;gap:26px;justify-content:center}.footer-end{gap:18px}}
+@media(max-width:359px){.header-index{gap:20px}}
 
 
 .footer-identity .practice-note{margin-top:18px}

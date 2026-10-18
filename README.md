@@ -1,63 +1,29 @@
-# Rudy Hartt — artist portfolio
+# Rudy Hartt — portfolio V2
 
-A self-contained static portfolio. There is no build step and no external JavaScript, font, analytics or image dependency.
+A static artist portfolio on black, with nine images arranged in the supplied reference's order, relative sizes and desktop positions. No build step or external dependency is required.
+
+## Site files
+
+- `index.html` includes all nine artworks as semantic HTML images and links. The gallery remains usable without JavaScript.
+- `styles.css` preserves the desktop composition in a fluid canvas up to 1680px wide. Below 700px, the images flow in source order at 76–90% of the viewport width with alternating alignment.
+- `app.js` adds a native dialog viewer with previous/next buttons, arrow keys, Escape-to-close and focus return. If JavaScript or native dialog support is unavailable, each artwork link opens the full image directly.
+- `artworks-data.js` provides the image viewer with public image paths and descriptive alt text. It contains no source-file metadata.
+- `assets/` contains WebP images at native resolution and responsive derivatives, with no upscaling.
+
+Images retain their full original compositions. Source images are never cropped. The gallery has no visible captions or invented artwork titles; the viewer uses image numbers and plain visual descriptions.
 
 ## Preview
 
-Open `index.html` in a current browser. Because the image manifest is loaded as a script, the collection also works when opened directly from a local folder.
+Open `index.html` in a current browser. Relative image paths and script data allow the website to work directly from a local folder as well as on a host. No package installation is needed.
 
-For a local web server, run `python3 -m http.server 8000` from this folder and open `http://localhost:8000`.
+## Deploy with GitHub Pages
 
-## Edit the collection
+The included `.github/workflows/pages.yml` publishes on a push to `main`. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**. Adjust `branches: [main]` if another branch is used.
 
-Update `artworks-data.js`, which defines `window.ARTWORKS` as an array. Each entry has this shape:
+The workflow copies only `index.html`, `styles.css`, `app.js`, `artworks-data.js`, `favicon.svg`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
 
-```javascript
-{
-  id: 'unique-artwork-id',
-  title: 'Artwork title',
-  year: 2026,
-  group: 'Material Studies',
-  src: 'assets/artwork-full.webp',
-  thumb: 'assets/artwork-preview.webp',
-  width: 1536,
-  height: 1024,
-  alt: 'A useful description of what is visible in the image.',
-  caption: 'A short interpretive caption. Describe an imagined installation as a digital study.'
-}
-```
+The same site can also be served by a static web host from the directory root. There are no hardcoded hostname requirements, remote fonts, tracking scripts or third-party embeds.
 
-The artwork marked `hero: true` appears in the featured position; the first artwork is used if none is marked. Collection order follows the first appearance of each group. Artwork order within each collection follows the array order. Filters and counts update automatically. Images retain their complete original compositions. Use relative asset paths so the site works on a GitHub project Pages URL as well as a local preview.
+## Verification
 
-Titles and captions are display copy; source provenance should be kept separately when needed. The portfolio describes the practice as AI-assisted digital art. Images of sculpture and installation must not be described as fabricated or exhibited objects unless that is independently true.
-
-## GitHub Pages
-
-The included `.github/workflows/pages.yml` publishes the site through GitHub Actions when changes are pushed to `main`. In **Settings → Pages → Build and deployment**, select **GitHub Actions**. If the repository's publishing branch has another name, change `branches: [main]` in the workflow. The workflow copies only public site files into the deployment artifact; this README and any working notes are not published.
-
-Alternatively, this folder can be published from the root of a repository using **Deploy from a branch**. Select the branch containing these files, and select `/(root)` as the folder. The included `.nojekyll` file tells GitHub to serve the static files directly.
-
-If replacing an existing site, review and preserve any existing source you need before replacing the published files. To use the default `github.io` address, clear the custom domain in **Settings → Pages** and ensure the deployed repository contains no `CNAME` file. Changes to DNS records at a domain provider are separate from clearing the GitHub Pages domain.
-
-## Interaction and accessibility
-
-- Native modal artwork viewer with previous/next controls.
-- Arrow keys navigate the current collection; Escape closes the viewer.
-- Focus returns to the artwork button when the viewer closes.
-- Keyboard-visible focus, alt text, semantic landmarks and a skip link.
-- A reduced-motion preference disables ribbon animation and smooth scrolling.
-- Responsive layouts keep images uncropped, including on narrow screens.
-
-The site has no visitor tracking, forms, mailing lists or third-party embeds.
-
-## Live portfolio and validation
-
-Live site: https://rudyhartt.github.io/art/
-
-Source repository: https://github.com/rudyhartt/art
-
-The 24-artwork collection is published through GitHub Actions. Image integrity, asset references, aspect ratios, HTML IDs and JavaScript syntax were checked. The live page, collection filtering, full-size artwork loading, next-artwork navigation, Escape-to-close and focus restoration were verified in a browser.
-
-Workflow reference: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
-
-Domain settings reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+JavaScript syntax, local asset references, image decoding, responsive candidate dimensions, image order and desktop canvas bounds can be checked without a browser. Visual browser rendering is a separate validation step and has not been claimed as performed in this environment.

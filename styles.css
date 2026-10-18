@@ -161,7 +161,7 @@ figure,h1,h2,p{margin:0}
 @media(prefers-reduced-motion:reduce){.ambient-background::before,.ambient-background::after{animation:none;will-change:auto}.ambient-background::before{transform:scale(1.08)}.ambient-background::after{transform:rotate(180deg) scale(1.08)}}
 
 
-/* Royal crests need more vertical room than horizontal wordmarks. */
-.external-logo-royal{height:130px;max-width:190px}
-@media(max-width:699px){.external-logo-royal{height:72px;max-width:110px}}
-@media(max-width:359px){.external-logo-royal{height:64px}}
+/* Crests and compact institutional marks need more vertical room than wordmarks. */
+.external-logo-royal,.external-logo-square{height:130px;max-width:190px}
+@media(max-width:699px){.external-logo-royal,.external-logo-square{height:72px;max-width:110px}}
+@media(max-width:359px){.external-logo-royal,.external-logo-square{height:64px}}

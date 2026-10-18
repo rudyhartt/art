@@ -463,5 +463,104 @@ window.ARTWORKS = [
     "width": 1024,
     "height": 1536,
     "scope": "weight-of-tenderness-cover"
+  },
+  {
+    "id": "soft-forms-01",
+    "title": "Blue Held Beneath the Surface",
+    "src": "assets/soft-forms-01.webp",
+    "alt": "Close view of a translucent aqua face and shoulder with a flowing blue ponytail, suspended bubbles and rippling reflections.",
+    "caption": "Light enters the figure and leaves as a tide of blue.",
+    "materials": "AI, resin, silicone, pigment",
+    "width": 1448,
+    "height": 1086,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-02",
+    "title": "The Pause Before a Step",
+    "src": "assets/soft-forms-02.webp",
+    "alt": "Two translucent lime-green feet stand on a dark plinth, one heel lifted and the other spreading into a shallow puddle.",
+    "caption": "Even a pause can leave its own small pool.",
+    "materials": "AI, gelatin, silicone, pigment, stone",
+    "width": 1086,
+    "height": 1448,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-03",
+    "title": "A Drop at the Shoulder",
+    "src": "assets/soft-forms-03.webp",
+    "alt": "A translucent cyan ponytail curves across a lavender neck and upper back, ending in a suspended drop against a pink background.",
+    "caption": "The ponytail pauses at the point of becoming a drop.",
+    "materials": "AI, resin, silicone, pigment",
+    "width": 1448,
+    "height": 1086,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-04",
+    "title": "An Ear Full of Light",
+    "src": "assets/soft-forms-04.webp",
+    "alt": "A close detail of a lavender ear, closed eye and curling cyan ponytail reveals bubbles suspended throughout the glossy translucent form.",
+    "caption": "An ear holds its silence in a constellation of air.",
+    "materials": "AI, resin, silicone, pigment",
+    "width": 1086,
+    "height": 1448,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-05",
+    "title": "Lavender Drift",
+    "src": "assets/soft-forms-05.webp",
+    "alt": "A glossy pink figure with a long cyan ponytail rests her chin on folded hands above a translucent lavender wave dripping over a white plinth.",
+    "caption": "Rest takes the shape of a wave that has forgotten to break.",
+    "materials": "AI, resin, silicone, pigment, acrylic",
+    "width": 1672,
+    "height": 941,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-06",
+    "title": "Gathered Self",
+    "src": "assets/soft-forms-06.webp",
+    "alt": "A translucent yellow figure with cyan hair hugs her knees, surrounded by floating hand, ear, face and hair sculptures in a sunlit gallery.",
+    "caption": "The body gathers itself while its echoes remain in the room.",
+    "materials": "AI, resin, silicone, pigment, acrylic",
+    "width": 1916,
+    "height": 821,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-07",
+    "title": "At the Edge of Stillness",
+    "src": "assets/soft-forms-07.webp",
+    "alt": "A pale mint head and folded hands emerge from a dark reflecting pool, with a long translucent cyan ponytail trailing across the water.",
+    "caption": "Her outline loosens where the water begins.",
+    "materials": "AI, resin, silicone, pigment, water, glass",
+    "width": 1916,
+    "height": 821,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-08",
+    "title": "The Pedestal Begins to Flow",
+    "src": "assets/soft-forms-08.webp",
+    "alt": "A translucent hot-pink bust with a sweeping cyan ponytail rises from a pink cuboid plinth that spills into a glossy puddle against black.",
+    "caption": "The face holds its form while the pedestal gives way.",
+    "materials": "AI, resin, silicone, gelatin, pigment",
+    "width": 1086,
+    "height": 1448,
+    "scope": "what-the-light-can-hold"
+  },
+  {
+    "id": "soft-forms-cover",
+    "title": "What the Light Can Hold",
+    "src": "assets/soft-forms-cover.webp",
+    "alt": "A translucent mint and lavender head rises from a melting pedestal, encircled by a sweeping cyan ponytail filled with suspended bubbles.",
+    "caption": "Colour finds a face; a flowing line becomes its shelter.",
+    "materials": "AI, resin, silicone, pigment, glass",
+    "width": 1254,
+    "height": 1254,
+    "scope": "what-the-light-can-hold-cover"
   }
 ];

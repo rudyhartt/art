@@ -5,6 +5,7 @@ A static artist portfolio on black, with nine images arranged in the supplied re
 ## Site files
 
 - `index.html` includes all twenty-seven artworks and three collection covers as semantic HTML images and links. The gallery remains usable without JavaScript.
+- The header uses a heavy Arial-family artist name with **AI Artist** beneath it, plus white V&A, IWM and UAL logos linking to their official websites in new tabs. These are neutral external links. Navigation and logos wrap onto separate rows on small screens.
 - `styles.css` preserves the original artwork sizes and staggered positions in four fluid canvases up to 1680px wide. The first collection follows original images 1–3; the second follows images 4–5; the third follows image 6; original images 7–9 finish the page. Each canvas uses rebased source coordinates to preserve artwork proportions. On wide desktop layouts, collection starts fall approximately around one-fifth, two-fifths and three-fifths of the page, depending on text layout and viewport width.
 - The first collection uses a square cover on the left and six thumbnails in three columns and two rows at 1100px and above. The second uses a larger square cover beside a two-column, two-row grid from 1200px upward. The third uses a cover beside eight thumbnails in four columns and two rows from 1280px upward. Below those thresholds, covers sit above their grids. Below 700px, all collections use two-column thumbnail grids, and original artworks flow at 76–90% of viewport width with alternating alignment.
 - `app.js` adds a native dialog viewer with previous/next buttons, arrow keys, Escape-to-close and focus return. If JavaScript or native dialog support is unavailable, each artwork link opens the full image directly.
@@ -12,6 +13,8 @@ A static artist portfolio on black, with nine images arranged in the supplied re
 - `assets/` contains WebP images at native resolution and responsive derivatives, with no upscaling.
 
 The original gallery and full-size viewer retain each artwork's complete composition. Collection thumbnails use prepared square previews; selecting one reveals the complete image. All three collections have visible titles and comma-separated materials lists beginning with **AI**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
+
+Text is slightly enlarged throughout the interface. Collection layouts allow captions to wrap naturally and adjust the cover-to-grid proportions at narrow desktop widths.
 
 ## Preview
 

@@ -1,17 +1,17 @@
 # Rudy Hartt — portfolio V2
 
-A static artist portfolio on black, with nine images arranged in the supplied reference's order and two featured collections: **Friends Stitch the Broken Sun** (six images) and **Small Rebellions** (eight images). No build step or external dependency is required.
+A static artist portfolio on black, with nine images arranged in the supplied reference's order and three featured collections: **Friends Stitch the Broken Sun** (six images), **A Softer Kind of Physics** (four images) and **Small Rebellions** (eight images). No build step or external dependency is required.
 
 ## Site files
 
-- `index.html` includes all twenty-three artworks and two collection covers as semantic HTML images and links. The gallery remains usable without JavaScript.
-- `styles.css` preserves the original artwork sizes and staggered positions in three fluid canvases up to 1680px wide. The first collection follows original images 1–3; the second follows image 4; original images 5–9 finish the page. Each canvas uses rebased source coordinates to preserve artwork proportions. On wide desktop layouts, the first collection begins around one-fifth of the page and the second around two-fifths.
-- The first collection uses a square cover on the left and six thumbnails in three columns and two rows at 1100px and above. The second uses a cover on the left and eight thumbnails in four columns and two rows at 1280px and above; below that threshold its cover sits above a four-column grid. Below 700px, both collections use two-column thumbnail grids, and original artworks flow at 76–90% of viewport width with alternating alignment.
+- `index.html` includes all twenty-seven artworks and three collection covers as semantic HTML images and links. The gallery remains usable without JavaScript.
+- `styles.css` preserves the original artwork sizes and staggered positions in four fluid canvases up to 1680px wide. The first collection follows original images 1–3; the second follows images 4–5; the third follows image 6; original images 7–9 finish the page. Each canvas uses rebased source coordinates to preserve artwork proportions. On wide desktop layouts, collection starts fall approximately around one-fifth, two-fifths and three-fifths of the page, depending on text layout and viewport width.
+- The first collection uses a square cover on the left and six thumbnails in three columns and two rows at 1100px and above. The second uses a larger square cover beside a two-column, two-row grid from 1200px upward. The third uses a cover beside eight thumbnails in four columns and two rows from 1280px upward. Below those thresholds, covers sit above their grids. Below 700px, all collections use two-column thumbnail grids, and original artworks flow at 76–90% of viewport width with alternating alignment.
 - `app.js` adds a native dialog viewer with previous/next buttons, arrow keys, Escape-to-close and focus return. If JavaScript or native dialog support is unavailable, each artwork link opens the full image directly.
-- `artworks-data.js` provides the image viewer with public image paths, descriptive alt text and navigation scopes. The original gallery browses nine images; each collection browses its own six or eight full images. Each cover opens independently. It contains no source-file metadata.
+- `artworks-data.js` provides the image viewer with public image paths, descriptive alt text and navigation scopes. The original gallery browses nine images; each collection browses its own six, four or eight full images. Each cover opens independently. It contains no source-file metadata.
 - `assets/` contains WebP images at native resolution and responsive derivatives, with no upscaling.
 
-The original gallery and full-size viewer retain each artwork's complete composition. Collection thumbnails use prepared square previews; selecting one reveals the complete image. Both collections have visible titles and comma-separated materials lists beginning with **AI**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
+The original gallery and full-size viewer retain each artwork's complete composition. Collection thumbnails use prepared square previews; selecting one reveals the complete image. All three collections have visible titles and comma-separated materials lists beginning with **AI**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
 
 ## Preview
 

@@ -265,5 +265,60 @@ window.ARTWORKS = [
     "width": 1254,
     "height": 1254,
     "scope": "small-rebellions-cover"
+  },
+  {
+    "id": "play-01",
+    "title": "Torus Walker and Mischievous Sun",
+    "src": "assets/play-01.webp",
+    "alt": "A white ring-shaped character with an orange sphere inside walks a faceted yellow sun on a blue lead against a pale blue background.",
+    "caption": "A white ring-shaped character with an orange sphere inside walks a faceted yellow sun on a blue lead against a pale blue background.",
+    "materials": "AI, stoneware, cast resin, steel, nylon cord",
+    "width": 1254,
+    "height": 1254,
+    "scope": "softer-physics"
+  },
+  {
+    "id": "play-02",
+    "title": "Ponto's First Steps Across Bubbles",
+    "src": "assets/play-02.webp",
+    "alt": "A turquoise round-headed character balances on three clear bubbles attached to winding blue limbs with orange suction cups, against a yellow background.",
+    "caption": "A turquoise round-headed character balances on three clear bubbles attached to winding blue limbs with orange suction cups, against a yellow background.",
+    "materials": "AI, cast resin, silicone, blown glass",
+    "width": 1254,
+    "height": 1254,
+    "scope": "softer-physics"
+  },
+  {
+    "id": "play-03",
+    "title": "Pipette Gathers a Cobalt Disc",
+    "src": "assets/play-03.webp",
+    "alt": "A transparent one-eyed creature on red feet bends a long glass tube toward a floating cobalt disc above a blue reflective pool.",
+    "caption": "A transparent one-eyed creature on red feet bends a long glass tube toward a floating cobalt disc above a blue reflective pool.",
+    "materials": "AI, borosilicate glass, cobalt glass, cast resin",
+    "width": 1122,
+    "height": 1402,
+    "scope": "softer-physics"
+  },
+  {
+    "id": "play-04",
+    "title": "Prismlet’s Impossible Cube Rain",
+    "src": "assets/play-04.webp",
+    "alt": "A purple glass prism with a small white face and orange feet receives black drops from above as blue, yellow and pink cubes gather beneath it.",
+    "caption": "A purple glass prism with a small white face and orange feet receives black drops from above as blue, yellow and pink cubes gather beneath it.",
+    "materials": "AI, dichroic glass, porcelain, cast resin, acrylic",
+    "width": 1254,
+    "height": 1254,
+    "scope": "softer-physics"
+  },
+  {
+    "id": "play-cover",
+    "title": "A Softer Kind of Physics",
+    "src": "assets/play-cover.webp",
+    "alt": "Four geometric characters play beside a cobalt pool, balancing on bubbles, walking a small sun and turning black drops into coloured cubes.",
+    "caption": "Four geometric characters play beside a cobalt pool, balancing on bubbles, walking a small sun and turning black drops into coloured cubes.",
+    "materials": "AI, stoneware, glass, resin, silicone, steel, nylon cord",
+    "width": 1254,
+    "height": 1254,
+    "scope": "softer-physics-cover"
   }
 ];

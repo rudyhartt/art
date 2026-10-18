@@ -320,5 +320,148 @@ window.ARTWORKS = [
     "width": 1254,
     "height": 1254,
     "scope": "softer-physics-cover"
+  },
+  {
+    "id": "thresholds-01",
+    "title": "A Quiet Cup for a Loud Body",
+    "src": "assets/thresholds-01.webp",
+    "alt": "A towering figure covered in blue metal horns, each holding a porcelain cup, offers a tiny cup to a seated white creature.",
+    "caption": "A vast body of horns lowers its voice to the scale of a cup.",
+    "materials": "AI, reclaimed steel, bronze, enamel paint, porcelain",
+    "width": 1122,
+    "height": 1402,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-02",
+    "title": "There Is Room for One More",
+    "src": "assets/thresholds-02.webp",
+    "alt": "Two large figures lift a weathered door into a long dining table supported by bronze hands, while a small figure watches.",
+    "caption": "Hospitality begins with the work of making another place.",
+    "materials": "AI, reclaimed doors, wood, steel, bronze, ceramic, paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-03",
+    "title": "The Coat That Kept the Lights On",
+    "src": "assets/thresholds-03.webp",
+    "alt": "A giant wears a patchwork coat containing warmly lit rooms, while a bird-headed figure holds open a doorway for a small visitor.",
+    "caption": "A garment becomes a neighbourhood of small, welcoming rooms.",
+    "materials": "AI, canvas, burlap, reclaimed wood, steel, ceramic, LED lighting",
+    "width": 1122,
+    "height": 1402,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-04",
+    "title": "The Thread Between Flight and Rest",
+    "src": "assets/thresholds-04.webp",
+    "alt": "A huge red and black textile moth hangs in an industrial hall, its trailing threads reaching a blue-haired figure working on a wooden chair.",
+    "caption": "Loose threads connect the possibility of flight to the patient work of repair.",
+    "materials": "AI, steel, cotton, wool, rope, wood, ceramic, paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-05",
+    "title": "A Place Beside You",
+    "src": "assets/thresholds-05.webp",
+    "alt": "A metal figure with a stacked disc head sits inside a circular bench surrounded by small painted creatures in a rain-wet courtyard.",
+    "caption": "A quiet seat becomes a gathering place for unlikely company.",
+    "materials": "AI, bronze, steel, reclaimed wood, ceramic, rope, paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-06",
+    "title": "The Garden Behind the Armour",
+    "src": "assets/thresholds-06.webp",
+    "alt": "A seated giant opens its red and turquoise metal chest to reveal white flowers, while a small black woolly creature reaches toward its open leg.",
+    "caption": "The heaviest body makes room for something delicate to grow.",
+    "materials": "AI, reclaimed steel, copper, ceramic, wool, paint",
+    "width": 1122,
+    "height": 1402,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-07",
+    "title": "A Birthday Made of What Remains",
+    "src": "assets/thresholds-07.webp",
+    "alt": "Painted creatures gather around a tall cake-like structure of bricks, crockery, coloured glass and candles beside a weathered stone column.",
+    "caption": "Fragments of ordinary life become a reason to celebrate together.",
+    "materials": "AI, reclaimed brick, ceramic, coloured glass, wood, steel, candle wax, paint",
+    "width": 1254,
+    "height": 1254,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-08",
+    "title": "The Whale That Carried Home",
+    "src": "assets/thresholds-08.webp",
+    "alt": "A huge timber whale contains glowing rooms behind exposed ribs, surrounded by small figures carrying belongings in boats across a flooded hall.",
+    "caption": "Home travels inside an enormous body built from many small refuges.",
+    "materials": "AI, reclaimed timber, steel, copper, ceramic, glass, water, LED lighting",
+    "width": 1448,
+    "height": 1086,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-09",
+    "title": "The Bell Learns to Listen",
+    "src": "assets/thresholds-09.webp",
+    "alt": "A monumental bronze bell with open hands suspends ceramic faces and ears above a small red-coated figure holding a violin.",
+    "caption": "An instrument made to be heard becomes a shelter for listening.",
+    "materials": "AI, bronze, steel, ceramic, brass wire, wood",
+    "width": 1122,
+    "height": 1402,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-10",
+    "title": "When Names Become Birds",
+    "src": "assets/thresholds-10.webp",
+    "alt": "A masked figure draped in metal identity tags lowers a tag toward a box held by a blue-haired figure, with colourful birds gathered at their feet.",
+    "caption": "A weight of names begins to take the shape of a flock.",
+    "materials": "AI, steel, aluminium, chain, ceramic, wood, paint",
+    "width": 1254,
+    "height": 1254,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-11",
+    "title": "The Things We Bring",
+    "src": "assets/thresholds-11.webp",
+    "alt": "Four towering figures on wheeled platforms hold a cup, key, shoe and potted plant above visitors in a sunlit industrial hall.",
+    "caption": "The procession carries ordinary objects with the care usually reserved for treasures.",
+    "materials": "AI, reclaimed wood, steel, cotton, linen, ceramic, dried flowers, paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-12",
+    "title": "A Giant Holds the Evening",
+    "src": "assets/thresholds-12.webp",
+    "alt": "A weathered giant with curved turquoise pipe arms supports swings at sunset while a tiny mechanic tends an opening in its chest.",
+    "caption": "Care moves both ways between the giant that holds the swings and the small figure at its heart.",
+    "materials": "AI, reclaimed steel, brass, wood, glass, rubber, paint",
+    "width": 1122,
+    "height": 1402,
+    "scope": "weight-of-tenderness"
+  },
+  {
+    "id": "thresholds-cover",
+    "title": "The Weight of Tenderness",
+    "src": "assets/thresholds-cover.webp",
+    "alt": "A kneeling giant of weathered metal and timber joins its open hands as a blue-haired figure carries a lantern toward a small pale companion.",
+    "caption": "A monumental pair of hands makes a bridge for a small act of trust.",
+    "materials": "AI, reclaimed steel, timber, brass, canvas, chain, glass, LED lighting",
+    "width": 1024,
+    "height": 1536,
+    "scope": "weight-of-tenderness-cover"
   }
 ];

@@ -166,3 +166,10 @@ figure,h1,h2,p{margin:0}
 .external-logo-royal,.external-logo-square{height:130px;max-width:190px}
 @media(max-width:699px){.external-logo-royal,.external-logo-square{height:72px;max-width:110px}}
 @media(max-width:359px){.external-logo-royal,.external-logo-square{height:64px}}
+
+/* The fourth collection pairs a portrait cover with twelve square previews. */
+.collection-section-twelve .collection-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:18px;row-gap:28px}
+.collection-section-twelve .collection-card figcaption{min-height:126px}
+.collection-section-twelve .collection-cover .artwork-link{aspect-ratio:2 / 3}
+@media(max-width:1279px){.collection-section-twelve .collection-layout{display:block}.collection-section-twelve .collection-cover{width:min(70%,600px);margin:0 auto 50px}.collection-section-twelve .collection-grid{column-gap:22px}}
+@media(max-width:699px){.collection-section-twelve .collection-cover{width:100%;margin-bottom:36px}.collection-section-twelve .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px;row-gap:25px}.collection-section-twelve .collection-card figcaption{min-height:126px}.gallery-finale{padding-top:0}}

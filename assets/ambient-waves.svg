@@ -2,28 +2,28 @@
   <defs>
     <linearGradient id="upper-fold" x1="760" y1="-100" x2="920" y2="610" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset=".18" stop-color="#050505" stop-opacity=".2"/>
-      <stop offset=".4" stop-color="#0d0d0d" stop-opacity=".6"/>
-      <stop offset=".58" stop-color="#161616" stop-opacity=".85"/>
-      <stop offset=".73" stop-color="#0c0c0c" stop-opacity=".6"/>
-      <stop offset=".9" stop-color="#030303" stop-opacity=".2"/>
+      <stop offset=".18" stop-color="#111111" stop-opacity=".2"/>
+      <stop offset=".4" stop-color="#282828" stop-opacity=".6"/>
+      <stop offset=".58" stop-color="#3a3a3a" stop-opacity=".85"/>
+      <stop offset=".73" stop-color="#252525" stop-opacity=".6"/>
+      <stop offset=".9" stop-color="#0b0b0b" stop-opacity=".2"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="middle-fold" x1="630" y1="240" x2="910" y2="970" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset=".2" stop-color="#050505" stop-opacity=".25"/>
-      <stop offset=".43" stop-color="#111111" stop-opacity=".7"/>
-      <stop offset=".57" stop-color="#161616" stop-opacity=".8"/>
-      <stop offset=".74" stop-color="#0a0a0a" stop-opacity=".55"/>
-      <stop offset=".92" stop-color="#020202" stop-opacity=".2"/>
+      <stop offset=".2" stop-color="#111111" stop-opacity=".25"/>
+      <stop offset=".43" stop-color="#303030" stop-opacity=".7"/>
+      <stop offset=".57" stop-color="#3a3a3a" stop-opacity=".8"/>
+      <stop offset=".74" stop-color="#222222" stop-opacity=".55"/>
+      <stop offset=".92" stop-color="#080808" stop-opacity=".2"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="lower-fold" x1="700" y1="550" x2="1050" y2="1280" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset=".22" stop-color="#070707" stop-opacity=".3"/>
-      <stop offset=".46" stop-color="#141414" stop-opacity=".75"/>
-      <stop offset=".6" stop-color="#101010" stop-opacity=".65"/>
-      <stop offset=".8" stop-color="#050505" stop-opacity=".35"/>
+      <stop offset=".22" stop-color="#181818" stop-opacity=".3"/>
+      <stop offset=".46" stop-color="#353535" stop-opacity=".75"/>
+      <stop offset=".6" stop-color="#2c2c2c" stop-opacity=".65"/>
+      <stop offset=".8" stop-color="#111111" stop-opacity=".35"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
   </defs>

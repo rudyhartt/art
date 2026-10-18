@@ -14,9 +14,15 @@ A static artist portfolio on black, with nine images arranged in the supplied re
 - `artworks-data.js` provides the image viewer with public image paths, descriptive alt text and navigation scopes. The original gallery browses nine images; each collection browses its own six, four or eight full images. Each cover opens independently. It contains no source-file metadata.
 - `assets/` contains WebP images at native resolution and responsive derivatives, with no upscaling.
 
-The original gallery and full-size viewer retain each artwork's complete composition. Collection thumbnails use prepared square previews; selecting one reveals the complete image. All three collections have visible titles and comma-separated materials lists beginning with **AI**. The original nine images remain uncaptioned on the page and use image numbers in the viewer.
+The original gallery and full-size viewer retain each artwork's complete composition. Collection thumbnails use prepared square previews; selecting one reveals the complete image. All three collections have visible titles and comma-separated materials lists beginning with **AI**. The nine original MOMENTS works carry pale story ribbons with a numbered fragment on each. A cobalt SVG thread connects them in sequence, routing through the outer gutter around the other collections. The viewer retains its original image numbers and descriptive captions.
 
 Text is slightly enlarged throughout the interface. Collection layouts allow captions to wrap naturally and adjust the cover-to-grid proportions at narrow desktop widths.
+
+`moments.js` draws the decorative connector ribbons from the actual image and caption positions. It recalculates on resize, image load and font readiness; it has no scroll listener or animation. The ribbons do not intercept clicks and are hidden from assistive technology; the story itself is accessible HTML. Below 700px, the story ribbons overlap each image’s lower edge and flow with the artwork, keeping the text readable. Without JavaScript, all nine story fragments and artwork links remain available.
+
+## Version checkpoints
+
+The `v2.1-backup` branch preserves the design before the MOMENTS ribbons at commit `f6e72762cd762df49e20c2c20a7dbae2646f7952`. The earlier V1 backup remains on `v1-backup`.
 
 ## Preview
 
@@ -28,7 +34,7 @@ CSS and JavaScript URLs in `index.html` include a version derived from each file
 
 The included `.github/workflows/pages.yml` publishes on a push to `main`. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**. Adjust `branches: [main]` if another branch is used.
 
-The workflow copies only `index.html`, `styles.css`, `app.js`, `artworks-data.js`, `favicon.svg`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
+The workflow copies only `index.html`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `favicon.svg`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
 
 The same site can also be served by a static web host from the directory root. There are no hardcoded hostname requirements, remote fonts, tracking scripts or third-party embeds.
 

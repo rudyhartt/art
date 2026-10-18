@@ -10,9 +10,10 @@
   <meta property="og:description" content="An artist portfolio of AI-assisted digital images.">
   <title>Rudy Hartt — Selected Works</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=1d735d35f0c8">
+  <link rel="stylesheet" href="styles.css?v=4dabbdd0ad83">
   <script defer src="artworks-data.js?v=6db09dec9d92"></script>
   <script defer src="app.js?v=b3c80a2dba87"></script>
+  <script defer src="moments.js?v=df111d3c58b8"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#works">Skip to artworks</a>
@@ -21,25 +22,26 @@
     <nav class="header-index" aria-label="Main navigation"><a href="#works">Works <span class="header-count">/ 27</span></a><a href="#collection">Collections</a><a href="#about">About</a></nav>
     <a class="header-store" href="https://lovebysymb10.myshopify.com/" target="_blank" rel="noopener noreferrer" aria-label="Store (opens in a new tab)">Store <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true" focusable="false"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
   </header>
-  <main>
+  <main class="moments-canvas">
+    <svg id="moments-thread" class="moments-thread" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"></svg>
     <section id="works" class="gallery gallery-opening" aria-label="Selected artworks, images 1 to 3" style="--canvas-ratio:1413.10595703 / 1245.62817383">
     <figure class="work" data-order="1" data-align="left" style="--x:26.5000435%;--y:2.9703668%;--w:46.8539622%;--h:35.4357344%;--mobile-width:90%">
       <a class="artwork-link" href="assets/artwork-01.webp" data-artwork-id="v2-artwork-01" aria-label="View image 01">
         <img src="assets/artwork-01-640.webp" srcset="assets/artwork-01-320.webp 320w, assets/artwork-01-640.webp 640w, assets/artwork-01-960.webp 960w, assets/artwork-01.webp 1536w" sizes="(max-width: 699px) 90vw, (min-width: 1680px) 787.1px, 46.8540vw" width="1536" height="1024" alt="A blue-haired figure and sculptural companions walk through a luminous porcelain city." loading="eager" decoding="async" fetchpriority="high">
       </a>
-      <figcaption class="sr-only">Image 01 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-01"><span class="moment-number">MOMENTS <b>01</b></span><span class="moment-story">They carried the unfinished through porcelain streets, looking for somewhere to begin.</span></figcaption>
     </figure>
     <figure class="work" data-order="2" data-align="right" style="--x:9.6791962%;--y:44.2764714%;--w:26.9896692%;--h:45.9277448%;--mobile-width:77%">
       <a class="artwork-link" href="assets/artwork-02.webp" data-artwork-id="v2-artwork-02" aria-label="View image 02">
         <img src="assets/artwork-02-640.webp" srcset="assets/artwork-02-320.webp 320w, assets/artwork-02-640.webp 640w, assets/artwork-02-960.webp 960w, assets/artwork-02.webp 1024w" sizes="(max-width: 699px) 77vw, (min-width: 1680px) 453.4px, 26.9897vw" width="1024" height="1536" alt="A blue-haired figure studies a large cracked vessel with a blue animal, a white figure and a floating pink form." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 02 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-02"><span class="moment-number">MOMENTS <b>02</b></span><span class="moment-story">At a cracked bowl, they learned how much emptiness could hold.</span></figcaption>
     </figure>
     <figure class="work" data-order="3" data-align="left" data-space="wide" style="--x:65.4263969%;--y:63.9088311%;--w:31.8137338%;--h:36.0911689%;--mobile-width:82%">
       <a class="artwork-link" href="assets/artwork-03.webp" data-artwork-id="v2-artwork-03" aria-label="View image 03">
         <img src="assets/artwork-03-640.webp" srcset="assets/artwork-03-320.webp 320w, assets/artwork-03-640.webp 640w, assets/artwork-03-960.webp 960w, assets/artwork-03.webp 1254w" sizes="(max-width: 699px) 82vw, (min-width: 1680px) 534.5px, 31.8137vw" width="1254" height="1254" alt="A blue-haired figure reaches one finger toward a translucent pink floating form, with a small blue companion behind." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 03 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-03"><span class="moment-number">MOMENTS <b>03</b></span><span class="moment-story">LOVE touched the light, and found their faces waiting inside.</span></figcaption>
     </figure>
     </section>
     <section id="collection" class="collection-section" aria-labelledby="collection-title">
@@ -96,13 +98,13 @@
       <a class="artwork-link" href="assets/artwork-04.webp" data-artwork-id="v2-artwork-04" aria-label="View image 04">
         <img src="assets/artwork-04-640.webp" srcset="assets/artwork-04-320.webp 320w, assets/artwork-04-640.webp 640w, assets/artwork-04-960.webp 960w, assets/artwork-04.webp 1024w" sizes="(max-width: 699px) 76vw, (min-width: 1680px) 500.6px, 29.7965vw" width="1024" height="1536" alt="A blue-haired figure walks beneath a dense hanging field of pale vertical tags and blue details." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 04 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-04"><span class="moment-number">MOMENTS <b>04</b></span><span class="moment-story">Among the hanging tokens, she listened for the moments they’d almost forgotten.</span></figcaption>
     </figure>
     <figure class="work" data-order="5" data-align="left" style="--x:61.0305106%;--y:22.4455961%;--w:25.2799287%;--h:77.5544039%;--mobile-width:78%">
       <a class="artwork-link" href="assets/artwork-05.webp" data-artwork-id="v2-artwork-05" aria-label="View image 05">
         <img src="assets/artwork-05-640.webp" srcset="assets/artwork-05-320.webp 320w, assets/artwork-05-640.webp 640w, assets/artwork-05-960.webp 960w, assets/artwork-05.webp 1024w" sizes="(max-width: 699px) 78vw, (min-width: 1680px) 424.7px, 25.2799vw" width="1024" height="1536" alt="A blue-haired figure works on small clay forms at a table, watched by white and blue companions." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 05 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-05"><span class="moment-number">MOMENTS <b>05</b></span><span class="moment-story">With clay and blue thread, she gave those moments a body.</span></figcaption>
     </figure>
     </section>
     <section id="softer-physics" class="collection-section collection-section-four" aria-labelledby="physics-title">
@@ -147,7 +149,7 @@
       <a class="artwork-link" href="assets/artwork-06.webp" data-artwork-id="v2-artwork-06" aria-label="View image 06">
         <img src="assets/artwork-06-640.webp" srcset="assets/artwork-06-320.webp 320w, assets/artwork-06-640.webp 640w, assets/artwork-06-960.webp 960w, assets/artwork-06.webp 1024w" sizes="(max-width: 699px) 80vw, (min-width: 1680px) 480.8px, 28.6167vw" width="1024" height="1536" alt="A blue-haired figure and blue companion stand before a towering blue-and-ivory surface with a blank human silhouette." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 06 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-06"><span class="moment-number">MOMENTS <b>06</b></span><span class="moment-story">But every world they made still held an outline they couldn’t fill.</span></figcaption>
     </figure>
     </section>
     <section id="small-rebellions" class="collection-section collection-section-eight" aria-labelledby="rebellions-title">
@@ -216,19 +218,19 @@
       <a class="artwork-link" href="assets/artwork-07.webp" data-artwork-id="v2-artwork-07" aria-label="View image 07">
         <img src="assets/artwork-07-640.webp" srcset="assets/artwork-07-320.webp 320w, assets/artwork-07-640.webp 640w, assets/artwork-07-960.webp 960w, assets/artwork-07.webp 1254w" sizes="(max-width: 699px) 78vw, (min-width: 1680px) 534.5px, 31.8137vw" width="1254" height="1254" alt="Four white portrait busts stand on a narrow shelf above a vivid blue braid lying on the floor." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 07 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-07"><span class="moment-number">MOMENTS <b>07</b></span><span class="moment-story">Four faces kept their silence; the blue thread circled what remained.</span></figcaption>
     </figure>
     <figure class="work" data-order="8" data-align="right" style="--x:34.9220584%;--y:36.2382939%;--w:36.3969986%;--h:29.4695136%;--mobile-width:84%">
       <a class="artwork-link" href="assets/artwork-08.webp" data-artwork-id="v2-artwork-08" aria-label="View image 08">
         <img src="assets/artwork-08-640.webp" srcset="assets/artwork-08-320.webp 320w, assets/artwork-08-640.webp 640w, assets/artwork-08-960.webp 960w, assets/artwork-08.webp 1254w" sizes="(max-width: 699px) 84vw, (min-width: 1680px) 611.5px, 36.3970vw" width="1254" height="1254" alt="Four companions gather around an empty pale circular center in an overhead view of a flowering garden." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 08 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-08"><span class="moment-number">MOMENTS <b>08</b></span><span class="moment-story">So they met where four paths ended, leaving the middle open.</span></figcaption>
     </figure>
     <figure class="work" data-order="9" data-align="left" data-space="wide" style="--x:27.4206831%;--y:69.9063033%;--w:51.3997448%;--h:27.7445153%;--mobile-width:90%">
       <a class="artwork-link" href="assets/artwork-09.webp" data-artwork-id="v2-artwork-09" aria-label="View image 09">
         <img src="assets/artwork-09-640.webp" srcset="assets/artwork-09-320.webp 320w, assets/artwork-09-640.webp 640w, assets/artwork-09-960.webp 960w, assets/artwork-09.webp 1536w" sizes="(max-width: 699px) 90vw, (min-width: 1680px) 863.5px, 51.3997vw" width="1536" height="1024" alt="A blue-haired figure shares a long bench with a white figure, blue animal and hovering pink form." loading="lazy" decoding="async">
       </a>
-      <figcaption class="sr-only">Image 09 of 09</figcaption>
+      <figcaption class="moment-ribbon" id="moment-story-09"><span class="moment-number">MOMENTS <b>09</b></span><span class="moment-story">And returned to the bench, where being together was enough.</span></figcaption>
     </figure>
     </section>
     <nav class="external-logo-area" aria-label="External links">

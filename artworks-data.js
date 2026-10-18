@@ -166,5 +166,104 @@ window.ARTWORKS = [
     "width": 1254,
     "height": 1254,
     "scope": "collection-cover"
+  },
+  {
+    "id": "rebellions-01",
+    "title": "Receipts Lift the Rent Collector",
+    "src": "assets/rebellions-01.webp",
+    "alt": "A long-coated figure is lifted over blue rooftops by streams of paper receipts, with small figures reaching from the buildings.",
+    "caption": "A long-coated figure is lifted over blue rooftops by streams of paper receipts, with small figures reaching from the buildings.",
+    "materials": "AI, paper, wood, ink, acrylic paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-02",
+    "title": "Alarm Becomes a Lullaby",
+    "src": "assets/rebellions-02.webp",
+    "alt": "A towering orange megaphone-headed figure releases black musical notes toward a pink sleeping form in a sling, beside a yellow bird.",
+    "caption": "A towering orange megaphone-headed figure releases black musical notes toward a pink sleeping form in a sling, beside a yellow bird.",
+    "materials": "AI, paper, resin, fabric, wire, acrylic paint",
+    "width": 1122,
+    "height": 1402,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-03",
+    "title": "Upward Rain, Shared Umbrella",
+    "src": "assets/rebellions-03.webp",
+    "alt": "A tall red figure in a striped coat shares an umbrella with a small green, cloud-haired character holding a glass jar in a purple rainy street.",
+    "caption": "A tall red figure in a striped coat shares an umbrella with a small green, cloud-haired character holding a glass jar in a purple rainy street.",
+    "materials": "AI, paper, wood, glass, fabric, acrylic paint",
+    "width": 1122,
+    "height": 1402,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-04",
+    "title": "Holding the Roof, Washing Hope",
+    "src": "assets/rebellions-04.webp",
+    "alt": "An enormous black creature stretches white fabric over a flooded laundrette while small figures stand among red washing machines and bubbles.",
+    "caption": "An enormous black creature stretches white fabric over a flooded laundrette while small figures stand among red washing machines and bubbles.",
+    "materials": "AI, paper, resin, cotton, metal, acrylic paint",
+    "width": 1122,
+    "height": 1402,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-05",
+    "title": "One Sandwich, a Burst of Color",
+    "src": "assets/rebellions-05.webp",
+    "alt": "A small orange figure offers a sandwich to a huge paper-faced creature whose open mouth releases colorful birds above a monochrome crowd.",
+    "caption": "A small orange figure offers a sandwich to a huge paper-faced creature whose open mouth releases colorful birds above a monochrome crowd.",
+    "materials": "AI, paper, wood, wire, acrylic paint",
+    "width": 1122,
+    "height": 1402,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-06",
+    "title": "Tiny Finger, Wild Flowers Rising",
+    "src": "assets/rebellions-06.webp",
+    "alt": "A tiny green-and-orange figure touches the fingertip of a giant purple hand as red and blue flowers spring from cracked pavement.",
+    "caption": "A tiny green-and-orange figure touches the fingertip of a giant purple hand as red and blue flowers spring from cracked pavement.",
+    "materials": "AI, paper, clay, wire, acrylic paint",
+    "width": 1254,
+    "height": 1254,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-07",
+    "title": "Midnight Shadow Dance",
+    "src": "assets/rebellions-07.webp",
+    "alt": "Animated black shadows dance across a huge billowing cream-and-pink sheet above a magenta ladder-like character in a wet nighttime street.",
+    "caption": "Animated black shadows dance across a huge billowing cream-and-pink sheet above a magenta ladder-like character in a wet nighttime street.",
+    "materials": "AI, paper, canvas, wood, ink, acrylic paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-08",
+    "title": "The Queue Rolls Away",
+    "src": "assets/rebellions-08.webp",
+    "alt": "A blue striped figure carries a coil of red queue rope past a pink grinning wheeled machine, surrounded by rows of monochrome waiting faces.",
+    "caption": "A blue striped figure carries a coil of red queue rope past a pink grinning wheeled machine, surrounded by rows of monochrome waiting faces.",
+    "materials": "AI, paper, wood, rope, metal, acrylic paint",
+    "width": 1448,
+    "height": 1086,
+    "scope": "small-rebellions"
+  },
+  {
+    "id": "rebellions-cover",
+    "title": "Small Rebellions",
+    "src": "assets/rebellions-cover.webp",
+    "alt": "A tiny green character touches a purple flower-headed giant’s hand while paper birds and a musical hammock brighten a rain-soaked city.",
+    "caption": "A tiny green character touches a purple flower-headed giant’s hand while paper birds and a musical hammock brighten a rain-soaked city.",
+    "materials": "AI, paper, wood, resin, fabric, acrylic paint",
+    "width": 1254,
+    "height": 1254,
+    "scope": "small-rebellions-cover"
   }
 ];

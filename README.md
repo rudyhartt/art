@@ -23,7 +23,11 @@ Text is slightly enlarged throughout the interface. Collection layouts allow cap
 
 A decorative viewport background uses a vertically seamless `assets/ambient-waves.svg`: charcoal crests and black troughs at 55% overall opacity, behind all artwork and navigation. A passive scroll listener in `app.js` updates the front and rear texture positions at 45% and 25% of page scroll through one requested animation frame; scrolling back reverses the movement. The soft 24/32-second CSS drift continues independently. Mobile uses one layer. The background uses a non-negative layer with positioned content above it; the main element remains unisolated so logo blending works. It is hidden from assistive technology and does not intercept input. `prefers-reduced-motion: reduce` disables both scroll coupling and timed animation. The stylesheet, script and SVG background URL use content versions to refresh cached visuals.
 
+Three transparent decorative accents float gently in existing empty gallery space: a glass ribbon beside MOMENTS 02, sculptural fragments to the right of MOMENTS 06, and a small character encounter to the left of MOMENTS 08. Each uses an 800 × 450 WebP with a 400px responsive variant. On desktop their transparent canvases are 180–420px wide, producing visible accents about 210–235px wide at larger viewports. Below 700px they use 110–160px canvases, producing roughly 62–126px of visible artwork within the existing bottom margins; transparent padding can extend beyond those margins. They add no gallery height, preserve all artwork coordinates, and remain below the story labels. They are hidden from assistive technology, cannot receive pointer input, and have no viewer action. Reduced-motion preferences disable their slow vertical drift.
+
 ## Version checkpoints
+
+The `v2.2-backup` branch preserves the complete site before the floating decorations at commit `b7d5ae106d1fbce8b1795569d0ac59c3d0d69381`.
 
 The `v2.1-backup` branch preserves the design before the MOMENTS ribbons at commit `f6e72762cd762df49e20c2c20a7dbae2646f7952`. The earlier V1 backup remains on `v1-backup`.
 

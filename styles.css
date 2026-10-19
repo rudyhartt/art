@@ -199,3 +199,14 @@ button.artwork-link{border:0;padding:0;color:inherit;font:inherit;text-align:inh
 .artwork-dialog.is-changing .lightbox-image-wrap,.artwork-dialog.is-changing .lightbox-caption{opacity:0}
 img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
 @media(prefers-reduced-motion:reduce){.artwork-dialog,.artwork-dialog::backdrop,.lightbox-image-wrap,.lightbox-caption{transition:none}}
+
+
+/* Three small transparent encounters inhabit existing gallery space. */
+.floating-decoration{--float-rise:4px;--float-duration:18s;--float-delay:-5s;position:absolute;z-index:1;display:block;aspect-ratio:16 / 9;transform:translateX(-50%);pointer-events:none;user-select:none}
+.floating-decoration>img{width:100%;height:auto;pointer-events:none;animation:floating-buoyancy var(--float-duration) ease-in-out var(--float-delay) infinite alternate}
+.floating-decoration-glass{left:150%;top:0;width:clamp(180px,23vw,300px);opacity:.86}
+.floating-decoration-fragments{left:230%;top:34%;width:clamp(210px,27vw,360px);opacity:.92;--float-duration:22s;--float-delay:-11s}
+.floating-decoration-encounter{left:-49%;top:28%;width:clamp(220px,30vw,420px);opacity:.92;--float-duration:20s;--float-delay:-7s}
+@keyframes floating-buoyancy{from{transform:translate3d(0,calc(-1 * var(--float-rise)),0)}to{transform:translate3d(0,var(--float-rise),0)}}
+@media(max-width:699px){.floating-decoration{--float-rise:2px;top:calc(100% - 4px);left:auto;right:6%;width:clamp(118px,32vw,160px);transform:none}.floating-decoration-glass{width:clamp(110px,32vw,160px)}.floating-decoration-fragments{right:22%}.floating-decoration-encounter{right:5%;top:calc(100% - 6px)}}
+@media(prefers-reduced-motion:reduce){.floating-decoration>img{animation:none;transform:none}}

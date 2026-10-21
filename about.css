@@ -1,0 +1,23 @@
+/* Approved About-page design; the existing header, footer and waves stay shared. */
+.about-main{position:relative;z-index:1;width:calc(100% - var(--edge)*2);max-width:1512px;margin:0 auto;border-top:1px solid var(--line)}
+.about-hero{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);align-items:center;column-gap:clamp(16px,3vw,56px);padding:clamp(56px,7.8vw,120px) 0 clamp(56px,6vw,92px)}
+.about-hero-copy{min-width:0;position:relative;z-index:1}
+.about-kicker{font-size:clamp(12px,1.15vw,16px);font-weight:700;line-height:1.4;letter-spacing:.18em;text-transform:uppercase;color:#ef353d;margin-bottom:clamp(22px,2.5vw,36px)}
+.about-hero h1{font-size:clamp(48px,6.2vw,96px);font-weight:800;line-height:1.02;letter-spacing:-.055em;text-wrap:balance}
+.about-sculpture{min-width:0;max-width:510px;width:112%;justify-self:center;pointer-events:none}
+.about-ribbon{width:100%;height:auto;object-fit:contain;--float-rise:5px;animation:floating-buoyancy 18s ease-in-out -5s infinite alternate;pointer-events:none}
+.about-biography{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,7.5vw,120px);padding-bottom:clamp(64px,7vw,104px);font-size:clamp(18px,1.75vw,26px);line-height:1.55;letter-spacing:-.017em}
+.about-copy-column{display:grid;align-content:start;gap:1.65em;min-width:0}
+.about-biography strong{font-weight:700}
+.about-explore{border-top:1px solid var(--line);padding:clamp(42px,5.8vw,84px) 0 clamp(18px,2.5vw,38px)}
+.about-explore a{display:inline-block;max-width:100%;font-size:clamp(30px,4.3vw,64px);font-weight:700;line-height:1.16;letter-spacing:-.04em;transition:color 180ms ease}
+.about-explore a:hover{color:#ef353d}
+.about-explore span{display:inline-block;white-space:nowrap;transition:transform 180ms ease}
+.about-explore a:hover span{transform:translate(3px,-3px)}
+.about-page .header-index [aria-current="page"]{color:var(--white)}
+@media(min-width:1800px){.about-main{max-width:1680px}.about-biography{max-width:1512px}}
+@media(max-width:999px) and (min-width:700px){.about-hero{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);column-gap:12px}.about-hero h1{font-size:clamp(45px,6.2vw,62px)}.about-biography{gap:40px;font-size:19px}}
+@media(max-width:699px){.about-hero{grid-template-columns:minmax(0,1fr);padding:52px 0 40px;gap:14px}.about-kicker{margin-bottom:24px}.about-hero h1{font-size:clamp(42px,10vw,65px);max-width:13ch;line-height:1.04}.about-sculpture{width:min(85%,330px);max-width:100%;justify-self:end;margin:0 -4% -8px 0}.about-biography{grid-template-columns:minmax(0,1fr);gap:1.65em;font-size:19px;line-height:1.6;padding-bottom:58px}.about-explore{padding:39px 0 8px}.about-explore a{font-size:clamp(29px,7.4vw,46px)}}
+@media(max-width:359px){.about-hero h1{font-size:38px}.about-biography{font-size:18px}.about-explore a{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.about-ribbon{animation:none;transform:none}.about-explore a,.about-explore span{transition:none}.about-explore a:hover span{transform:none}}
+

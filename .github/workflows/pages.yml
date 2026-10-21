@@ -28,7 +28,7 @@ jobs:
       - name: Prepare public site
         run: |
           mkdir -p _site
-          cp index.html styles.css app.js artworks-data.js moments.js favicon.svg favicon-32.png favicon.ico apple-touch-icon.png .nojekyll _site/
+          cp index.html about.html about.css styles.css app.js artworks-data.js moments.js favicon.svg favicon-32.png favicon.ico apple-touch-icon.png .nojekyll _site/
           cp -R assets _site/assets
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
@@ -37,3 +37,4 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

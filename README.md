@@ -4,6 +4,8 @@ A static artist portfolio on black, with nine images arranged in the supplied re
 
 ## Site files
 
+- `about.html` presents the approved artist biography, Every image begins with a story headline, transparent silver-and-red ribbon and Explore the artwork link. `about.css` contains only About-page layout rules. The shared navigation, disabled Store button, footer and scroll-linked waves remain unchanged in appearance; About links to this page and Works/Collections return to the homepage anchors. Biography columns stack below 700px, and decorative motion respects reduced-motion preferences.
+
 - `index.html` includes all forty-seven artworks and five collection covers as semantic HTML images and viewer buttons. Without JavaScript, all gallery images and captions remain visible, while expanded viewing is unavailable.
 - The top and footer identities use matching heavy Arial-family **RUDY HARTT** names with **AI Artist** beneath. The header has the artist identity at left, centered page navigation and a temporarily disabled Store button with a diagonal arrow at right. Below 700px, the navigation occupies a centered second row beneath the name and Store link.
 - A spacious logo section follows the last artwork, with V&A, IWM and UAL in the first row; MAHacks, Gamli Skóli and Tate in the second; Sony, the UK Royal Family and the Royal House of the Netherlands in the third; Amsterdam University College, Ogilvy and the University of Oxford in the fourth; and the supplied WAOWI, RUDY’S and SYMB10 logos in the fifth. The first twelve logos link to external sites in new tabs. The final three are static brand marks. The layout preserves three columns and five rows on mobile, with larger display sizes on desktop and additional room for tall marks.
@@ -35,13 +37,13 @@ The `v2.1-backup` branch preserves the design before the MOMENTS ribbons at comm
 
 Open `index.html` in a current browser. Relative image paths and script data allow the website to work directly from a local folder as well as on a host. No package installation is needed.
 
-CSS and JavaScript URLs in `index.html` include a version derived from each file’s SHA-256 content hash (first 12 characters). Update the corresponding query value whenever that file changes so returning visitors receive matching HTML, styles and viewer data.
+CSS and JavaScript URLs in `index.html` and `about.html` include a version derived from each file’s SHA-256 content hash (first 12 characters). Update the corresponding query value whenever that file changes so returning visitors receive matching HTML, styles and viewer data.
 
 ## Deploy with GitHub Pages
 
 The included `.github/workflows/pages.yml` publishes on a push to `main`. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**. Adjust `branches: [main]` if another branch is used.
 
-The workflow copies only `index.html`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
+The workflow copies only `index.html`, `about.html`, `about.css`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
 
 The same site can also be served by a static web host from the directory root. Page assets use relative paths; the social metadata identifies `https://rudyhartt.com/`. There are no remote fonts, tracking scripts or third-party embeds.
 
@@ -52,3 +54,4 @@ JavaScript syntax, local asset references, image decoding, responsive candidate 
 The Gamli Skóli, RUDY’S and SYMB10 footer marks now use transparent SVG masks over the original source pixels. Their white shapes need no page blend mode, so the animated background shows through all negative spaces.
 
 The share artwork highlights ART in red within HARTT and adds a larger, bold white superscript trademark symbol after the final T.
+

@@ -210,3 +210,7 @@ img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-dr
 @keyframes floating-buoyancy{from{transform:translate3d(0,calc(-1 * var(--float-rise)),0)}to{transform:translate3d(0,var(--float-rise),0)}}
 @media(max-width:699px){.floating-decoration{--float-rise:2px;top:calc(100% - 4px);left:auto;right:6%;width:clamp(118px,32vw,160px);transform:none}.floating-decoration-glass{width:clamp(110px,32vw,160px)}.floating-decoration-fragments{right:22%}.floating-decoration-encounter{right:5%;top:calc(100% - 6px)}}
 @media(prefers-reduced-motion:reduce){.floating-decoration>img{animation:none;transform:none}}
+
+/* The WAR exhibition banner preserves the approved artwork at every screen size. */
+.war-banner{position:relative;z-index:3;width:calc(100% - var(--edge)*2);max-width:1512px;margin:clamp(12px,2vw,32px) auto clamp(24px,3vw,48px)}
+.war-banner>img{display:block;width:100%;height:auto;aspect-ratio:3 / 1}

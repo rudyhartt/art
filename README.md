@@ -1,7 +1,5 @@
 # Rudy Hartt — portfolio V2
 
-> **Publication status — 21 October 2026:** The public website now serves only a plain black holding page. The complete portfolio source remains below and is preserved at commit `233301a714cbd98a8c497e017e76aa193982ef52` on branch `portfolio-backup-2026-10-21-233301a`. Restore that snapshot’s Pages preparation step to republish the portfolio. The current workflow publishes only `holding/index.html` as the home, About and fallback pages, plus `.nojekyll`; no artwork assets are included in the live artifact.
-
 A static artist portfolio on black, with nine images arranged in the supplied reference's order and five featured collections: **Friends Stitch the Broken Sun** (six images), **A Softer Kind of Physics** (four images), **Small Rebellions** (eight images), **The Weight of Tenderness** (twelve images), and **What the Light Can Hold** (eight images). No build step or external dependency is required.
 
 ## Site files

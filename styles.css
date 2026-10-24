@@ -217,7 +217,12 @@ img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-dr
 
 /* The WAR exhibition banner preserves the approved artwork at every screen size. */
 .war-banner{position:relative;z-index:3;width:calc(100% - var(--edge)*2);max-width:1512px;margin:clamp(12px,2vw,32px) auto clamp(24px,3vw,48px)}
-.war-banner>img{display:block;width:100%;height:auto;aspect-ratio:3 / 1}
+.war-banner-art{position:relative;aspect-ratio:3 / 1}
+.war-banner-image{display:block;width:100%;height:auto;aspect-ratio:3 / 1}
+/* The complete illustration bleeds off the right edge, as in the placement preview. */
+.war-banner-art>.war-hero-character{position:absolute;z-index:1;top:45%;left:68%;width:clamp(440px,56vw,800px);max-width:none;margin:0}
+.moments-canvas{overflow-x:clip}
+.gallery-opening .work[data-order="1"]{z-index:4}
 
 /* A concise exhibition introduction sits beneath the WAR banner. */
 .war-intro{max-width:760px;margin:clamp(20px,2.4vw,36px) auto 0;font-size:clamp(14px,1.1vw,16px);line-height:1.85;color:#c5c1bb;text-align:center;text-wrap:pretty}
@@ -234,19 +239,35 @@ body.lightbox-open .firefly-field{visibility:hidden}
 .character-companion{display:block;grid-row:1;grid-column:3 / 5;justify-self:center;width:min(100%,clamp(130px,12vw,180px));aspect-ratio:1;margin:0 0 clamp(12px,3vw,44px);pointer-events:none}
 .character-companion>img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;-webkit-user-drag:none;-webkit-touch-callout:none}
 .character-illustration{display:block;grid-row:1;grid-column:6 / -1;justify-self:center;width:min(100%,clamp(260px,35vw,420px));height:auto;object-fit:contain;pointer-events:none;-webkit-user-drag:none;-webkit-touch-callout:none}
-.character-interlude-02 .character-illustration{grid-column:2 / 9;justify-self:start;width:min(100%,clamp(320px,44vw,560px))}
+.character-interlude-02 .character-illustration{grid-column:2 / 9;justify-self:start;width:min(100%,clamp(380px,46vw,650px))}
 .character-interlude-02 .character-companion{grid-column:10 / 12}
-.character-interlude-03 .character-illustration{grid-column:6 / -1;justify-self:end;width:min(100%,clamp(380px,46vw,650px))}
+.character-interlude-03 .character-illustration{grid-column:6 / -1;justify-self:end;width:min(100%,clamp(320px,44vw,560px))}
 .character-interlude-03 .character-companion{grid-column:2 / 4}
-.character-interlude-04 .character-illustration{grid-column:1 / 10;justify-self:center;width:min(100%,clamp(440px,56vw,800px))}
+.character-interlude-04 .character-illustration{grid-column:1 / 10;justify-self:center;width:min(100%,clamp(260px,35vw,420px))}
 .character-interlude-04 .character-companion{grid-column:11 / -1}
 @media(max-width:699px){
  .character-interlude{padding:18px 0 8px;margin-bottom:26px;row-gap:0}
  .character-interlude-after-collection{margin-top:-24px}
  .character-interlude .character-illustration{grid-column:1 / -1;grid-row:1;width:min(100%,72vw);justify-self:end}
- .character-interlude-02 .character-illustration{width:min(100%,78vw);justify-self:start}
- .character-interlude-03 .character-illustration{width:min(100%,84vw)}
- .character-interlude-04 .character-illustration{width:min(100%,88vw);justify-self:start}
+ .character-interlude-02 .character-illustration{width:min(100%,84vw);justify-self:start}
+ .character-interlude-03 .character-illustration{width:min(100%,78vw)}
+ .character-interlude-04 .character-illustration{width:min(100%,72vw);justify-self:start}
  .character-interlude .character-companion{grid-row:2;grid-column:1 / 4;justify-self:start;width:min(100%,90px);margin:-12px 0 0}
  .character-interlude-02 .character-companion,.character-interlude-04 .character-companion{grid-column:10 / -1;justify-self:end}
 }
+
+/* Keep the centered introduction clear of the large illustration at laptop widths. */
+@media(min-width:1100px) and (max-width:1499px){.war-intro{max-width:640px}}
+/* Narrow layouts show the whole character in flow, with readable copy below it. */
+@media(max-width:1099px){
+ .war-banner-art{display:grid;grid-template-columns:minmax(0,1fr);aspect-ratio:auto}
+ .war-banner-image{grid-area:1 / 1}
+ .war-banner-art>.war-hero-character{position:relative;grid-area:2 / 1;top:auto;left:auto;justify-self:end;width:min(100%,clamp(440px,56vw,800px));max-width:100%;margin-top:-12%}
+ .war-intro{max-width:760px}
+}
+@media(max-width:699px){
+ .war-banner-art>.war-hero-character{width:min(100%,88vw)}
+ .character-interlude-01 .character-companion{grid-row:1;margin-top:0}
+}
+@media(min-width:1200px){.character-interlude-02{z-index:3;padding-top:0;margin-top:calc(-1 * (clamp(85px,8vw,130px) + clamp(52px,5vw,78px)))}}
+@media(min-width:1280px){.character-interlude-04{z-index:3;padding-top:0;margin-top:calc(-1 * (clamp(85px,8vw,130px) + clamp(44px,4vw,64px)))}.character-interlude-04 .character-illustration{justify-self:start}}

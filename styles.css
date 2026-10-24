@@ -219,10 +219,10 @@ img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-dr
 .war-banner{--war-character-width:min(100%,clamp(440px,56vw,800px));position:relative;z-index:3;display:grid;grid-template-columns:minmax(0,1fr);align-items:start;width:calc(100% - var(--edge)*2);max-width:1512px;margin:clamp(12px,2vw,32px) auto clamp(24px,3vw,48px)}
 .war-banner-art{grid-area:1 / 1;display:grid;grid-template-columns:minmax(0,1fr);align-items:start;width:100%;min-width:0}
 .war-banner-image{grid-area:1 / 1;display:block;width:100%;height:auto;aspect-ratio:3 / 1}
-.war-banner-art>.war-hero-character{grid-area:1 / 1;justify-self:start;z-index:1;width:var(--war-character-width);margin:23% 0 0}
+.war-banner-art>.war-hero-character{grid-area:1 / 1;justify-self:end;z-index:1;width:var(--war-character-width);margin:23% 0 0}
 
 /* The introduction begins directly below the banner, beside the character. */
-.war-intro{grid-area:1 / 1;align-self:start;justify-self:end;width:calc(100% - var(--war-character-width) - clamp(24px,3vw,48px));min-width:0;max-width:760px;margin:calc(33.333333% + clamp(20px,2.4vw,36px)) 0 0;font-size:clamp(14px,1.1vw,16px);line-height:1.85;color:#c5c1bb;text-align:left;text-wrap:pretty}
+.war-intro{grid-area:1 / 1;align-self:start;justify-self:start;width:calc(100% - var(--war-character-width) - clamp(24px,3vw,48px));min-width:0;max-width:760px;margin:calc(33.333333% + clamp(20px,2.4vw,36px)) 0 0;font-size:clamp(14px,1.1vw,16px);line-height:1.85;color:#c5c1bb;text-align:center;text-wrap:pretty}
 
 /* Translucent winged creatures gather above the waves, beneath page content. */
 .firefly-field{position:fixed;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;user-select:none;contain:strict}

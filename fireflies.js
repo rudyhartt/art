@@ -22,6 +22,11 @@
   let pageActive = true;
   let modalOpen = Boolean(dialog && dialog.open);
   let scrollPosition = Math.max(0, window.scrollY);
+  const nebula = new Image();
+  nebula.decoding = 'async';
+  nebula.addEventListener('load', () => {
+    if (pageActive && !document.hidden && !modalOpen) draw(motion.matches ? 0 : elapsed);
+  });
 
   // One small cached glow avoids creating gradients for every creature/frame.
   const halo = document.createElement('canvas');
@@ -109,13 +114,14 @@
     // Keep the canvas small, but anchor every cloud to the document itself.
     // The margin covers the full cloud spread, glow, drift and orbit so clouds
     // enter the viewport naturally rather than appearing at a band boundary.
-    const margin = 320;
+    const margin = 360;
     const firstBand = Math.max(0, Math.floor((scrollPosition - margin) / bandHeight));
     const lastBand = Math.floor((scrollPosition + height + margin) / bandHeight);
     for (const band of cloudBands.keys()) {
       if (band < firstBand || band > lastBand) cloudBands.delete(band);
     }
 
+    const visibleClouds = [];
     for (let band = firstBand; band <= lastBand; band++) {
       if (!cloudBands.has(band)) cloudBands.set(band, createClouds(band));
       for (const cloud of cloudBands.get(band)) {
@@ -124,23 +130,41 @@
         const centerX = width * cloud.x + driftX;
         const centerY = bandHeight * (band + cloud.y) + driftY - scrollPosition;
         if (centerY < -margin || centerY > height + margin) continue;
+        visibleClouds.push({ cloud, centerX, centerY });
+      }
+    }
 
-        for (const mote of cloud.motes) {
-          const orbitX = quiet ? 0 : Math.sin(time * .29 + mote.phase) * 12;
-          const orbitY = quiet ? 0 : Math.cos(time * .23 + mote.phase) * 9;
-          const shimmer = quiet ? 1 : .83 + .17 * Math.sin(time * .45 + mote.phase);
-          context.globalAlpha = mote.opacity * shimmer;
-          context.fillStyle = '#fff';
-          context.beginPath();
-          context.arc(centerX + mote.x * spanX + orbitX, centerY + mote.y * spanY + orbitY, mote.radius, 0, tau);
-          context.fill();
-        }
+    // Paint the transparent photographic mist first, below every creature.
+    if (nebula.complete && nebula.naturalWidth) {
+      const mistWidth = Math.min(width * (compact ? .95 : .55), compact ? 420 : 720);
+      const mistHeight = mistWidth * nebula.naturalHeight / nebula.naturalWidth;
+      for (const { cloud, centerX, centerY } of visibleClouds) {
+        context.save();
+        context.translate(centerX, centerY);
+        context.rotate(Math.sin(cloud.phase) * .32);
+        context.scale(Math.cos(cloud.phase) < 0 ? -1 : 1, 1);
+        context.globalAlpha = compact ? .18 : .20;
+        context.drawImage(nebula, -mistWidth / 2, -mistHeight / 2, mistWidth, mistHeight);
+        context.restore();
+      }
+    }
 
-        for (const creature of cloud.creatures) {
-          const orbitX = quiet ? 0 : Math.sin(time * .32 + creature.phase) * 22;
-          const orbitY = quiet ? 0 : Math.cos(time * .27 + creature.phase) * 16;
-          drawCreature(creature, centerX + creature.x * spanX + orbitX, centerY + creature.y * spanY + orbitY, time);
-        }
+    for (const { cloud, centerX, centerY } of visibleClouds) {
+      for (const mote of cloud.motes) {
+        const orbitX = quiet ? 0 : Math.sin(time * .29 + mote.phase) * 12;
+        const orbitY = quiet ? 0 : Math.cos(time * .23 + mote.phase) * 9;
+        const shimmer = quiet ? 1 : .83 + .17 * Math.sin(time * .45 + mote.phase);
+        context.globalAlpha = mote.opacity * shimmer;
+        context.fillStyle = '#fff';
+        context.beginPath();
+        context.arc(centerX + mote.x * spanX + orbitX, centerY + mote.y * spanY + orbitY, mote.radius, 0, tau);
+        context.fill();
+      }
+
+      for (const creature of cloud.creatures) {
+        const orbitX = quiet ? 0 : Math.sin(time * .32 + creature.phase) * 22;
+        const orbitY = quiet ? 0 : Math.cos(time * .27 + creature.phase) * 16;
+        drawCreature(creature, centerX + creature.x * spanX + orbitX, centerY + creature.y * spanY + orbitY, time);
       }
     }
     context.globalAlpha = 1;
@@ -219,4 +243,5 @@
     }).observe(dialog, { attributes: true, attributeFilter: ['open'] });
   }
   resize();
+  nebula.src = 'assets/firefly-nebula.webp';
 })();

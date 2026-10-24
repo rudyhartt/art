@@ -214,3 +214,6 @@ img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-dr
 /* The WAR exhibition banner preserves the approved artwork at every screen size. */
 .war-banner{position:relative;z-index:3;width:calc(100% - var(--edge)*2);max-width:1512px;margin:clamp(12px,2vw,32px) auto clamp(24px,3vw,48px)}
 .war-banner>img{display:block;width:100%;height:auto;aspect-ratio:3 / 1}
+
+/* A concise exhibition introduction sits beneath the WAR banner. */
+.war-intro{max-width:760px;margin:clamp(20px,2.4vw,36px) auto 0;font-size:clamp(14px,1.1vw,16px);line-height:1.85;color:#c5c1bb;text-align:center;text-wrap:pretty}

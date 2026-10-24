@@ -27,7 +27,11 @@ A decorative viewport background uses a vertically seamless `assets/ambient-wave
 
 Three transparent decorative accents float gently in existing empty gallery space: a glass ribbon beside MOMENTS 02, sculptural fragments to the right of MOMENTS 06, and a small character encounter to the left of MOMENTS 08. Each uses an 800 × 450 WebP with a 400px responsive variant. On desktop their transparent canvases are 180–420px wide, producing visible accents about 210–235px wide at larger viewports. Below 700px they use 110–160px canvases, producing roughly 62–126px of visible artwork within the existing bottom margins; transparent padding can extend beyond those margins. They add no gallery height, preserve all artwork coordinates, and remain below the story labels. They are hidden from assistive technology, cannot receive pointer input, and have no viewer action. Reduced-motion preferences disable their slow vertical drift.
 
+`fireflies.js` draws softly glowing white creatures in drifting clouds of small particles on the homepage and About page. Each creature has a translucent circular body and two fluttering translucent oval wings. The decorative canvas sits between the waves and page content, receives no pointer input, and is hidden from assistive technology. Small screens use fewer creatures; reduced-motion preferences replace the animation with a sparse still field. Animation pauses while the page is hidden or the artwork viewer is open.
+
 ## Version checkpoints
+
+The `v2.3-backup` branch preserves the site with the WAR mural banner and exhibition introduction, before the firefly animation, at commit `024358f1226b5e42615572c2019569a138eacbf1`.
 
 The `v2.2-backup` branch preserves the complete site before the floating decorations at commit `b7d5ae106d1fbce8b1795569d0ac59c3d0d69381`.
 
@@ -43,7 +47,7 @@ CSS and JavaScript URLs in `index.html` and `about.html` include a version deriv
 
 The included `.github/workflows/pages.yml` publishes on a push to `main`. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**. Adjust `branches: [main]` if another branch is used.
 
-The workflow copies only `index.html`, `about.html`, `about.css`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
+The workflow copies only `index.html`, `about.html`, `about.css`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `fireflies.js`, `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
 
 The same site can also be served by a static web host from the directory root. Page assets use relative paths; the social metadata identifies `https://rudyhartt.com/`. There are no remote fonts, tracking scripts or third-party embeds.
 

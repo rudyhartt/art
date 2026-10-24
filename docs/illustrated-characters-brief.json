@@ -1,0 +1,28 @@
+{
+  "method": "Built-in image generation",
+  "stylePrompt": "Use case: illustration-story. Create ONE completely original illustrated character as a standalone transparent PNG cutout for Rudy Hartt's black contemporary art portfolio. A sophisticated playful street-art / hand-painted editorial illustration, truly 2D, expressive bold imperfect charcoal contour, matte gouache blocks, subtle screenprinted grain, small chalk and collage details. Character-led storytelling, emotionally alive, distinctive silhouette, not a mascot logo and not a 3D toy. Warm ivory, electric cobalt, muted coral-red, turquoise and small yellow highlights; maintain strong readable luminous colour on a black webpage. Entire character and accompanying small story-object visible, nothing cropped, no text, lettering, signature, border, sticker outline, scenery or rectangular backdrop; genuinely transparent background, no black/white filled background, no ground plane. Use square canvas 1024x1024, character fills about88% with safe clear margin. Keep every body part plausible within stylized anatomy. ",
+  "characters": [
+    {
+      "n": 1,
+      "story": "Character01: THE LISTENER. A tall gentle cobalt-blue creature with an enormous asymmetrical ivory bean-shaped head, two huge upright soft leaf-like ears, one round curious eye and one sleepy crescent eye, a small ochre triangular nose. Its broad oversized mitten hands cup a tiny coral-red singing bird near its ear as it leans its whole body down to listen. Long bent blue legs, big mismatched red and cream shoes, patchwork blue jacket; three small nontext floating dots near bird suggest soft song. Dynamic diagonal crouching pose oriented inward toward left. Warm and unusual, sophisticated original art, not an existing cartoon."
+    },
+    {
+      "n": 2,
+      "story": "Character02: THE MOON MENDER. A compact spiky-headed coral-red character in a huge puffy red coat, tiny cream face with two black eyes and an intent crooked smile, oversized soft white gloves and short charcoal legs in cobalt boots. Seated sideways with one knee raised, carefully joining two halves of a small cracked ivory crescent moon with a thick turquoise thread, threading it through existing holes with fingers (no needle needed). The moon shape and curling thread create a bold diagonal around the character. A yellow star peeks from its coat pocket. New recognizable silhouette and playful caring story; thick energetic drawn brushwork, not photoreal."
+    },
+    {
+      "n": 3,
+      "story": "Character03: THE POCKET SEA. An eccentric turquoise bird-like wanderer with a huge rounded horizontal head, one tall ivory oval eye, a long soft downward ochre beak, two short upright feather tufts, lanky bent legs and oversized red sneakers. Wearing a flowing inkblue scarf and an ivory patchwork sleeveless jacket. Bending forward carefully pouring a little ultramarine ocean from a tiny red watering can into a cupped ivory shell held in the other wing-hand; one absurdly small ivory paper boat rides the curving stream. All water is a small controlled illustrated ribbon connected to shell, not a background. Strong curved silhouette leaning toward right, all limbs and feet visible. Caring and surprising mood. An original handpainted character, 2D drawn surface with chunky gouache and printgrain, no glossy3D."
+    },
+    {
+      "n": 4,
+      "story": "Character04: THE NIGHT GARDENER. The biggest, gentlest strange friend: huge warm ivory round head with a short broad horizontal hat-like crest formed from its own head, tiny mismatched black eyes and a wide shy sideways mouth; elongated soft ivory arms, small red mittens, very long blue-and-ivory striped trousers and enormous coral sneakers. Sitting wide-legged in a relaxed asymmetrical pose, cradling a charcoal-black crescent moon like a planter across its lap. From the dark crescent grows one large vivid pink/coral sculptural flower and two turquoise leaves; the creature leans its cheek tenderly close to the flower. Show one face on creature only, no face onmoon. Broad expansive silhouette fills landscape-ish area within square, polished contemporary streetart illustration, beautifully tactile drybrush texture and graphic negative space, not a familiar existing cartoon, no scenery."
+    }
+  ],
+  "webAssets": [
+    "assets/illustrated-giant-01.webp",
+    "assets/illustrated-giant-02.webp",
+    "assets/illustrated-giant-03.webp",
+    "assets/illustrated-giant-04.webp"
+  ]
+}

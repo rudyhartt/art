@@ -1,0 +1,16 @@
+{
+  "asset": "illustrated-snake-yellow",
+  "mode": "built-in image generation",
+  "purpose": "Tall transparent decorative snake beneath the WAR banner, left gutter, with tail near the beginning of the blue MOMENTS ribbon.",
+  "prompt": "Use case: illustration-story. Create ONE original character illustration, a tall vertically posed snake for the left margin of Rudy Hartt's black art-portfolio website. Genuine transparent background. Portrait canvas approximately 1:3 width to height, with the complete snake and tongue entirely inside frame and a little transparent padding. The snake is viewed strictly from the SIDE, facing LEFT toward the outside of the page. Its small head is near the top; ONE expressive black eye on the visible outward-facing side, close to the left edge of the head. The open mouth is a clean triangular cut-out notch in the left-facing profile. A bright RED long FORKED TONGUE waves out to the LEFT in a graceful little curl, clearly separated into two tips. Body is vivid warm YELLOW with a bold hand-painted BLACK continuous ZIGZAG pattern running the length of its back. Long elegant upright serpentine S-shaped body descends through two or three gentle bends to a slender curved tail near the bottom; keep the silhouette tall and relatively narrow, not a coiled horizontal snake. Playful graphic street-art character, painted cut-paper collage illustration: tactile gouache and oil-pastel grain, worn ink outlines, subtle pencil scuffs, charming simple shapes, strong readable yellow-black contrast, matching textured contemporary illustrated characters. Entire figure, no cropping. No ground, no shadow on a surface, no scenery, no frame, no text, no additional objects or characters. Do not make it photorealistic, glossy 3D, a dragon, a cobra hood, or a mascot with arms/legs. Keep the mouth a geometric triangular negative-space opening and the red forked tongue very legible.",
+  "source": "generated_images/exec-922c8032-d3b4-45ca-9b80-7b12b4385a8b.png",
+  "source_dimensions": [
+    724,
+    2172
+  ],
+  "website_assets": [
+    "assets/illustrated-snake-yellow.webp",
+    "assets/illustrated-snake-yellow-240.webp"
+  ],
+  "processing": "RGBA preserved; WebP conversion and a proportional 240px responsive variant only. No cropping or compositing."
+}

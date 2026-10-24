@@ -223,6 +223,7 @@ img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-dr
 .war-banner-art>.war-hero-character{position:absolute;z-index:1;top:45%;left:68%;width:clamp(440px,56vw,800px);max-width:none;margin:0}
 .moments-canvas{overflow-x:clip}
 .gallery-opening .work[data-order="1"]{z-index:4}
+.war-snake-illustration{position:absolute;z-index:1;top:calc(100% + clamp(24px,2.4vw,36px));left:0;display:block;width:min(20%,280px);height:clamp(420px,40vw,680px);object-fit:contain;object-position:top left;pointer-events:none;user-select:none;-webkit-user-drag:none;-webkit-touch-callout:none}
 
 /* A concise exhibition introduction sits beneath the WAR banner. */
 .war-intro{max-width:760px;margin:clamp(20px,2.4vw,36px) auto 0;font-size:clamp(14px,1.1vw,16px);line-height:1.85;color:#c5c1bb;text-align:center;text-wrap:pretty}
@@ -263,10 +264,12 @@ body.lightbox-open .firefly-field{visibility:hidden}
  .war-banner-art{display:grid;grid-template-columns:minmax(0,1fr);aspect-ratio:auto}
  .war-banner-image{grid-area:1 / 1}
  .war-banner-art>.war-hero-character{position:relative;grid-area:2 / 1;top:auto;left:auto;justify-self:end;width:min(100%,clamp(440px,56vw,800px));max-width:100%;margin-top:-12%}
+ .war-snake-illustration{position:relative;grid-area:2 / 1;top:auto;left:auto;justify-self:start;align-self:center;width:min(24%,190px);height:auto;margin-top:20px}
  .war-intro{max-width:760px}
 }
 @media(max-width:699px){
  .war-banner-art>.war-hero-character{width:min(100%,88vw)}
+ .war-snake-illustration{grid-area:3 / 1;width:min(38vw,180px);margin:18px 0 0 3%}
  .character-interlude-01 .character-companion{grid-row:1;margin-top:0}
 }
 @media(min-width:1200px){.character-interlude-02{z-index:3;padding-top:0;margin-top:calc(-1 * (clamp(85px,8vw,130px) + clamp(52px,5vw,78px)))}}

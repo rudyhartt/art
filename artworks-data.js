@@ -96,7 +96,7 @@ window.ARTWORKS = [
     "src": "assets/collection-01.webp",
     "alt": "A white teardrop-headed character reaches toward a curling blue light trail amid torn-paper buildings.",
     "caption": "A white teardrop-headed character reaches toward a curling blue light trail amid torn-paper buildings.",
-    "materials": "Human, AI, paper, wood, resin, cotton, acrylic paint, LEDs",
+    "materials": "Human, paper, wood, resin, cotton, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -107,7 +107,7 @@ window.ARTWORKS = [
     "src": "assets/collection-02.webp",
     "alt": "A fuzzy black character with mismatched eyes tends glowing pink flowers beneath looping blue light.",
     "caption": "A fuzzy black character with mismatched eyes tends glowing pink flowers beneath looping blue light.",
-    "materials": "Human, AI, paper, faux fur, fabric, wire, resin, LEDs",
+    "materials": "Human, paper, faux fur, fabric, wire, resin, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -118,7 +118,7 @@ window.ARTWORKS = [
     "src": "assets/collection-03.webp",
     "alt": "A purple square-headed character with a blue loop tumbles through coral light trails in a collage city.",
     "caption": "A purple square-headed character with a blue loop tumbles through coral light trails in a collage city.",
-    "materials": "Human, AI, paper, resin, fabric, wire, acrylic paint, LEDs",
+    "materials": "Human, paper, resin, fabric, wire, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -129,7 +129,7 @@ window.ARTWORKS = [
     "src": "assets/collection-04.webp",
     "alt": "A red knotted character sits on a broken ledge, cradling a glowing sphere between its hands.",
     "caption": "A red knotted character sits on a broken ledge, cradling a glowing sphere between its hands.",
-    "materials": "Human, AI, paper, concrete, rope, fabric, wire, LEDs",
+    "materials": "Human, paper, concrete, rope, fabric, wire, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -140,7 +140,7 @@ window.ARTWORKS = [
     "src": "assets/collection-05.webp",
     "alt": "A turquoise folded character with an orange ruff drifts along a paper boat through a fragmented city and pale currents.",
     "caption": "A turquoise folded character with an orange ruff drifts along a paper boat through a fragmented city and pale currents.",
-    "materials": "Human, AI, paper, resin, fabric, wire, acrylic paint, LEDs",
+    "materials": "Human, paper, resin, fabric, wire, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -151,7 +151,7 @@ window.ARTWORKS = [
     "src": "assets/collection-06.webp",
     "alt": "A yellow triangular character steps between torn architectural fragments and vivid magenta light trails.",
     "caption": "A yellow triangular character steps between torn architectural fragments and vivid magenta light trails.",
-    "materials": "Human, AI, paper, wood, concrete, wire, acrylic paint, LEDs",
+    "materials": "Human, paper, wood, concrete, wire, acrylic paint, LEDs",
     "width": 1122,
     "height": 1402,
     "scope": "friends-stitch-the-broken-sun"
@@ -162,7 +162,7 @@ window.ARTWORKS = [
     "src": "assets/collection-cover.webp",
     "alt": "Six fantastical characters gather in a torn-paper city around a fractured glowing sun and intertwined trails of light.",
     "caption": "Six fantastical characters gather in a torn-paper city around a fractured glowing sun and intertwined trails of light.",
-    "materials": "Human, AI, paper, wood, resin, fabric, wire, LEDs",
+    "materials": "Human, paper, wood, resin, fabric, wire, LEDs",
     "width": 1254,
     "height": 1254,
     "scope": "collection-cover"
@@ -173,7 +173,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-01.webp",
     "alt": "A long-coated figure is lifted over blue rooftops by streams of paper receipts, with small figures reaching from the buildings.",
     "caption": "A long-coated figure is lifted over blue rooftops by streams of paper receipts, with small figures reaching from the buildings.",
-    "materials": "Human, AI, paper, wood, ink, acrylic paint",
+    "materials": "Human, paper, wood, ink, acrylic paint",
     "width": 1448,
     "height": 1086,
     "scope": "small-rebellions"
@@ -184,7 +184,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-02.webp",
     "alt": "A towering orange megaphone-headed figure releases black musical notes toward a pink sleeping form in a sling, beside a yellow bird.",
     "caption": "A towering orange megaphone-headed figure releases black musical notes toward a pink sleeping form in a sling, beside a yellow bird.",
-    "materials": "Human, AI, paper, resin, fabric, wire, acrylic paint",
+    "materials": "Human, paper, resin, fabric, wire, acrylic paint",
     "width": 1122,
     "height": 1402,
     "scope": "small-rebellions"
@@ -195,7 +195,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-03.webp",
     "alt": "A tall red figure in a striped coat shares an umbrella with a small green, cloud-haired character holding a glass jar in a purple rainy street.",
     "caption": "A tall red figure in a striped coat shares an umbrella with a small green, cloud-haired character holding a glass jar in a purple rainy street.",
-    "materials": "Human, AI, paper, wood, glass, fabric, acrylic paint",
+    "materials": "Human, paper, wood, glass, fabric, acrylic paint",
     "width": 1122,
     "height": 1402,
     "scope": "small-rebellions"
@@ -206,7 +206,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-04.webp",
     "alt": "An enormous black creature stretches white fabric over a flooded laundrette while small figures stand among red washing machines and bubbles.",
     "caption": "An enormous black creature stretches white fabric over a flooded laundrette while small figures stand among red washing machines and bubbles.",
-    "materials": "Human, AI, paper, resin, cotton, metal, acrylic paint",
+    "materials": "Human, paper, resin, cotton, metal, acrylic paint",
     "width": 1122,
     "height": 1402,
     "scope": "small-rebellions"
@@ -217,7 +217,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-05.webp",
     "alt": "A small orange figure offers a sandwich to a huge paper-faced creature whose open mouth releases colorful birds above a monochrome crowd.",
     "caption": "A small orange figure offers a sandwich to a huge paper-faced creature whose open mouth releases colorful birds above a monochrome crowd.",
-    "materials": "Human, AI, paper, wood, wire, acrylic paint",
+    "materials": "Human, paper, wood, wire, acrylic paint",
     "width": 1122,
     "height": 1402,
     "scope": "small-rebellions"
@@ -228,7 +228,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-06.webp",
     "alt": "A tiny green-and-orange figure touches the fingertip of a giant purple hand as red and blue flowers spring from cracked pavement.",
     "caption": "A tiny green-and-orange figure touches the fingertip of a giant purple hand as red and blue flowers spring from cracked pavement.",
-    "materials": "Human, AI, paper, clay, wire, acrylic paint",
+    "materials": "Human, paper, clay, wire, acrylic paint",
     "width": 1254,
     "height": 1254,
     "scope": "small-rebellions"
@@ -239,7 +239,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-07.webp",
     "alt": "Animated black shadows dance across a huge billowing cream-and-pink sheet above a magenta ladder-like character in a wet nighttime street.",
     "caption": "Animated black shadows dance across a huge billowing cream-and-pink sheet above a magenta ladder-like character in a wet nighttime street.",
-    "materials": "Human, AI, paper, canvas, wood, ink, acrylic paint",
+    "materials": "Human, paper, canvas, wood, ink, acrylic paint",
     "width": 1448,
     "height": 1086,
     "scope": "small-rebellions"
@@ -250,7 +250,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-08.webp",
     "alt": "A blue striped figure carries a coil of red queue rope past a pink grinning wheeled machine, surrounded by rows of monochrome waiting faces.",
     "caption": "A blue striped figure carries a coil of red queue rope past a pink grinning wheeled machine, surrounded by rows of monochrome waiting faces.",
-    "materials": "Human, AI, paper, wood, rope, metal, acrylic paint",
+    "materials": "Human, paper, wood, rope, metal, acrylic paint",
     "width": 1448,
     "height": 1086,
     "scope": "small-rebellions"
@@ -261,7 +261,7 @@ window.ARTWORKS = [
     "src": "assets/rebellions-cover.webp",
     "alt": "A tiny green character touches a purple flower-headed giant’s hand while paper birds and a musical hammock brighten a rain-soaked city.",
     "caption": "A tiny green character touches a purple flower-headed giant’s hand while paper birds and a musical hammock brighten a rain-soaked city.",
-    "materials": "Human, AI, paper, wood, resin, fabric, acrylic paint",
+    "materials": "Human, paper, wood, resin, fabric, acrylic paint",
     "width": 1254,
     "height": 1254,
     "scope": "small-rebellions-cover"
@@ -272,7 +272,7 @@ window.ARTWORKS = [
     "src": "assets/play-01.webp",
     "alt": "A white ring-shaped character with an orange sphere inside walks a faceted yellow sun on a blue lead against a pale blue background.",
     "caption": "A white ring-shaped character with an orange sphere inside walks a faceted yellow sun on a blue lead against a pale blue background.",
-    "materials": "Human, AI, stoneware, cast resin, steel, nylon cord",
+    "materials": "Human, stoneware, cast resin, steel, nylon cord",
     "width": 1254,
     "height": 1254,
     "scope": "softer-physics"
@@ -283,7 +283,7 @@ window.ARTWORKS = [
     "src": "assets/play-02.webp",
     "alt": "A turquoise round-headed character balances on three clear bubbles attached to winding blue limbs with orange suction cups, against a yellow background.",
     "caption": "A turquoise round-headed character balances on three clear bubbles attached to winding blue limbs with orange suction cups, against a yellow background.",
-    "materials": "Human, AI, cast resin, silicone, blown glass",
+    "materials": "Human, cast resin, silicone, blown glass",
     "width": 1254,
     "height": 1254,
     "scope": "softer-physics"
@@ -294,7 +294,7 @@ window.ARTWORKS = [
     "src": "assets/play-03.webp",
     "alt": "A transparent one-eyed creature on red feet bends a long glass tube toward a floating cobalt disc above a blue reflective pool.",
     "caption": "A transparent one-eyed creature on red feet bends a long glass tube toward a floating cobalt disc above a blue reflective pool.",
-    "materials": "Human, AI, borosilicate glass, cobalt glass, cast resin",
+    "materials": "Human, borosilicate glass, cobalt glass, cast resin",
     "width": 1122,
     "height": 1402,
     "scope": "softer-physics"
@@ -305,7 +305,7 @@ window.ARTWORKS = [
     "src": "assets/play-04.webp",
     "alt": "A purple glass prism with a small white face and orange feet receives black drops from above as blue, yellow and pink cubes gather beneath it.",
     "caption": "A purple glass prism with a small white face and orange feet receives black drops from above as blue, yellow and pink cubes gather beneath it.",
-    "materials": "Human, AI, dichroic glass, porcelain, cast resin, acrylic",
+    "materials": "Human, dichroic glass, porcelain, cast resin, acrylic",
     "width": 1254,
     "height": 1254,
     "scope": "softer-physics"
@@ -316,7 +316,7 @@ window.ARTWORKS = [
     "src": "assets/play-cover.webp",
     "alt": "Four geometric characters play beside a cobalt pool, balancing on bubbles, walking a small sun and turning black drops into coloured cubes.",
     "caption": "Four geometric characters play beside a cobalt pool, balancing on bubbles, walking a small sun and turning black drops into coloured cubes.",
-    "materials": "Human, AI, stoneware, glass, resin, silicone, steel, nylon cord",
+    "materials": "Human, stoneware, glass, resin, silicone, steel, nylon cord",
     "width": 1254,
     "height": 1254,
     "scope": "softer-physics-cover"
@@ -327,7 +327,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-01.webp",
     "alt": "A towering figure covered in blue metal horns, each holding a porcelain cup, offers a tiny cup to a seated white creature.",
     "caption": "A vast body of horns lowers its voice to the scale of a cup.",
-    "materials": "Human, AI, reclaimed steel, bronze, enamel paint, porcelain",
+    "materials": "Human, reclaimed steel, bronze, enamel paint, porcelain",
     "width": 1122,
     "height": 1402,
     "scope": "weight-of-tenderness"
@@ -338,7 +338,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-02.webp",
     "alt": "Two large figures lift a weathered door into a long dining table supported by bronze hands, while a small figure watches.",
     "caption": "Hospitality begins with the work of making another place.",
-    "materials": "Human, AI, reclaimed doors, wood, steel, bronze, ceramic, paint",
+    "materials": "Human, reclaimed doors, wood, steel, bronze, ceramic, paint",
     "width": 1448,
     "height": 1086,
     "scope": "weight-of-tenderness"
@@ -349,7 +349,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-03.webp",
     "alt": "A giant wears a patchwork coat containing warmly lit rooms, while a bird-headed figure holds open a doorway for a small visitor.",
     "caption": "A garment becomes a neighbourhood of small, welcoming rooms.",
-    "materials": "Human, AI, canvas, burlap, reclaimed wood, steel, ceramic, LED lighting",
+    "materials": "Human, canvas, burlap, reclaimed wood, steel, ceramic, LED lighting",
     "width": 1122,
     "height": 1402,
     "scope": "weight-of-tenderness"
@@ -360,7 +360,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-04.webp",
     "alt": "A huge red and black textile moth hangs in an industrial hall, its trailing threads reaching a blue-haired figure working on a wooden chair.",
     "caption": "Loose threads connect the possibility of flight to the patient work of repair.",
-    "materials": "Human, AI, steel, cotton, wool, rope, wood, ceramic, paint",
+    "materials": "Human, steel, cotton, wool, rope, wood, ceramic, paint",
     "width": 1448,
     "height": 1086,
     "scope": "weight-of-tenderness"
@@ -371,7 +371,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-05.webp",
     "alt": "A metal figure with a stacked disc head sits inside a circular bench surrounded by small painted creatures in a rain-wet courtyard.",
     "caption": "A quiet seat becomes a gathering place for unlikely company.",
-    "materials": "Human, AI, bronze, steel, reclaimed wood, ceramic, rope, paint",
+    "materials": "Human, bronze, steel, reclaimed wood, ceramic, rope, paint",
     "width": 1448,
     "height": 1086,
     "scope": "weight-of-tenderness"
@@ -382,7 +382,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-06.webp",
     "alt": "A seated giant opens its red and turquoise metal chest to reveal white flowers, while a small black woolly creature reaches toward its open leg.",
     "caption": "The heaviest body makes room for something delicate to grow.",
-    "materials": "Human, AI, reclaimed steel, copper, ceramic, wool, paint",
+    "materials": "Human, reclaimed steel, copper, ceramic, wool, paint",
     "width": 1122,
     "height": 1402,
     "scope": "weight-of-tenderness"
@@ -393,7 +393,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-07.webp",
     "alt": "Painted creatures gather around a tall cake-like structure of bricks, crockery, coloured glass and candles beside a weathered stone column.",
     "caption": "Fragments of ordinary life become a reason to celebrate together.",
-    "materials": "Human, AI, reclaimed brick, ceramic, coloured glass, wood, steel, candle wax, paint",
+    "materials": "Human, reclaimed brick, ceramic, coloured glass, wood, steel, candle wax, paint",
     "width": 1254,
     "height": 1254,
     "scope": "weight-of-tenderness"
@@ -404,7 +404,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-08.webp",
     "alt": "A huge timber whale contains glowing rooms behind exposed ribs, surrounded by small figures carrying belongings in boats across a flooded hall.",
     "caption": "Home travels inside an enormous body built from many small refuges.",
-    "materials": "Human, AI, reclaimed timber, steel, copper, ceramic, glass, water, LED lighting",
+    "materials": "Human, reclaimed timber, steel, copper, ceramic, glass, water, LED lighting",
     "width": 1448,
     "height": 1086,
     "scope": "weight-of-tenderness"
@@ -415,7 +415,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-09.webp",
     "alt": "A monumental bronze bell with open hands suspends ceramic faces and ears above a small red-coated figure holding a violin.",
     "caption": "An instrument made to be heard becomes a shelter for listening.",
-    "materials": "Human, AI, bronze, steel, ceramic, brass wire, wood",
+    "materials": "Human, bronze, steel, ceramic, brass wire, wood",
     "width": 1122,
     "height": 1402,
     "scope": "weight-of-tenderness"
@@ -426,7 +426,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-10.webp",
     "alt": "A masked figure draped in metal identity tags lowers a tag toward a box held by a blue-haired figure, with colourful birds gathered at their feet.",
     "caption": "A weight of names begins to take the shape of a flock.",
-    "materials": "Human, AI, steel, aluminium, chain, ceramic, wood, paint",
+    "materials": "Human, steel, aluminium, chain, ceramic, wood, paint",
     "width": 1254,
     "height": 1254,
     "scope": "weight-of-tenderness"
@@ -437,7 +437,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-11.webp",
     "alt": "Four towering figures on wheeled platforms hold a cup, key, shoe and potted plant above visitors in a sunlit industrial hall.",
     "caption": "The procession carries ordinary objects with the care usually reserved for treasures.",
-    "materials": "Human, AI, reclaimed wood, steel, cotton, linen, ceramic, dried flowers, paint",
+    "materials": "Human, reclaimed wood, steel, cotton, linen, ceramic, dried flowers, paint",
     "width": 1448,
     "height": 1086,
     "scope": "weight-of-tenderness"
@@ -448,7 +448,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-12.webp",
     "alt": "A weathered giant with curved turquoise pipe arms supports swings at sunset while a tiny mechanic tends an opening in its chest.",
     "caption": "Care moves both ways between the giant that holds the swings and the small figure at its heart.",
-    "materials": "Human, AI, reclaimed steel, brass, wood, glass, rubber, paint",
+    "materials": "Human, reclaimed steel, brass, wood, glass, rubber, paint",
     "width": 1122,
     "height": 1402,
     "scope": "weight-of-tenderness"
@@ -459,7 +459,7 @@ window.ARTWORKS = [
     "src": "assets/thresholds-cover.webp",
     "alt": "A kneeling giant of weathered metal and timber joins its open hands as a blue-haired figure carries a lantern toward a small pale companion.",
     "caption": "A monumental pair of hands makes a bridge for a small act of trust.",
-    "materials": "Human, AI, reclaimed steel, timber, brass, canvas, chain, glass, LED lighting",
+    "materials": "Human, reclaimed steel, timber, brass, canvas, chain, glass, LED lighting",
     "width": 1024,
     "height": 1536,
     "scope": "weight-of-tenderness-cover"
@@ -470,7 +470,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-01.webp",
     "alt": "Close view of a translucent aqua face and shoulder with a flowing blue ponytail, suspended bubbles and rippling reflections.",
     "caption": "Light enters the figure and leaves as a tide of blue.",
-    "materials": "Human, AI, resin, silicone, pigment",
+    "materials": "Human, resin, silicone, pigment",
     "width": 1448,
     "height": 1086,
     "scope": "what-the-light-can-hold"
@@ -481,7 +481,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-02.webp",
     "alt": "Two translucent lime-green feet stand on a dark plinth, one heel lifted and the other spreading into a shallow puddle.",
     "caption": "Even a pause can leave its own small pool.",
-    "materials": "Human, AI, gelatin, silicone, pigment, stone",
+    "materials": "Human, gelatin, silicone, pigment, stone",
     "width": 1086,
     "height": 1448,
     "scope": "what-the-light-can-hold"
@@ -492,7 +492,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-03.webp",
     "alt": "A translucent cyan ponytail curves across a lavender neck and upper back, ending in a suspended drop against a pink background.",
     "caption": "The ponytail pauses at the point of becoming a drop.",
-    "materials": "Human, AI, resin, silicone, pigment",
+    "materials": "Human, resin, silicone, pigment",
     "width": 1448,
     "height": 1086,
     "scope": "what-the-light-can-hold"
@@ -503,7 +503,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-04.webp",
     "alt": "A close detail of a lavender ear, closed eye and curling cyan ponytail reveals bubbles suspended throughout the glossy translucent form.",
     "caption": "An ear holds its silence in a constellation of air.",
-    "materials": "Human, AI, resin, silicone, pigment",
+    "materials": "Human, resin, silicone, pigment",
     "width": 1086,
     "height": 1448,
     "scope": "what-the-light-can-hold"
@@ -514,7 +514,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-05.webp",
     "alt": "A glossy pink figure with a long cyan ponytail rests her chin on folded hands above a translucent lavender wave dripping over a white plinth.",
     "caption": "Rest takes the shape of a wave that has forgotten to break.",
-    "materials": "Human, AI, resin, silicone, pigment, acrylic",
+    "materials": "Human, resin, silicone, pigment, acrylic",
     "width": 1672,
     "height": 941,
     "scope": "what-the-light-can-hold"
@@ -525,7 +525,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-06.webp",
     "alt": "A translucent yellow figure with cyan hair hugs her knees, surrounded by floating hand, ear, face and hair sculptures in a sunlit gallery.",
     "caption": "The body gathers itself while its echoes remain in the room.",
-    "materials": "Human, AI, resin, silicone, pigment, acrylic",
+    "materials": "Human, resin, silicone, pigment, acrylic",
     "width": 1916,
     "height": 821,
     "scope": "what-the-light-can-hold"
@@ -536,7 +536,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-07.webp",
     "alt": "A pale mint head and folded hands emerge from a dark reflecting pool, with a long translucent cyan ponytail trailing across the water.",
     "caption": "Her outline loosens where the water begins.",
-    "materials": "Human, AI, resin, silicone, pigment, water, glass",
+    "materials": "Human, resin, silicone, pigment, water, glass",
     "width": 1916,
     "height": 821,
     "scope": "what-the-light-can-hold"
@@ -547,7 +547,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-08.webp",
     "alt": "A translucent hot-pink bust with a sweeping cyan ponytail rises from a pink cuboid plinth that spills into a glossy puddle against black.",
     "caption": "The face holds its form while the pedestal gives way.",
-    "materials": "Human, AI, resin, silicone, gelatin, pigment",
+    "materials": "Human, resin, silicone, gelatin, pigment",
     "width": 1086,
     "height": 1448,
     "scope": "what-the-light-can-hold"
@@ -558,7 +558,7 @@ window.ARTWORKS = [
     "src": "assets/soft-forms-cover.webp",
     "alt": "A translucent mint and lavender head rises from a melting pedestal, encircled by a sweeping cyan ponytail filled with suspended bubbles.",
     "caption": "Colour finds a face; a flowing line becomes its shelter.",
-    "materials": "Human, AI, resin, silicone, pigment, glass",
+    "materials": "Human, resin, silicone, pigment, glass",
     "width": 1254,
     "height": 1254,
     "scope": "what-the-light-can-hold-cover"

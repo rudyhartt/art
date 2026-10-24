@@ -103,7 +103,7 @@ figure,h1,h2,p{margin:0}
 
 /* The same artist identity appears at the top and bottom of the page. */
 .artist-identity{min-width:0}
-.artist-role{font-size:12px;font-weight:400;line-height:1.4;color:var(--muted);margin-top:5px;letter-spacing:.02em}
+.artist-role{font-size:12px;font-weight:400;line-height:1.4;color:#ef353d;margin-top:5px;letter-spacing:.02em}
 
 
 

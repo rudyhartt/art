@@ -186,9 +186,13 @@ button.artwork-link{border:0;padding:0;color:inherit;font:inherit;text-align:inh
 .external-logo-waowi{filter:grayscale(1) brightness(4) contrast(20) invert(1);mix-blend-mode:screen}
 .external-logo-rudys,.external-logo-symb10{filter:none;mix-blend-mode:normal}
 .external-logo-personal{height:145px;max-width:210px}
+.external-rudys-mark{position:relative;display:block;width:100%;max-width:145px;padding-right:10px}
+.external-logo-trademark{position:absolute;right:-5px;top:51%;font-size:17px;line-height:1;font-weight:800;color:#fff}
 .external-logo-static:hover .external-logo{opacity:1}
 @media(max-width:699px){.external-logo-personal{height:82px;max-width:120px}}
 @media(max-width:359px){.external-logo-personal{height:72px;max-width:105px}}
+@media(max-width:699px){.external-rudys-mark{max-width:82px;padding-right:7px}.external-logo-trademark{right:-4px;font-size:11px}}
+@media(max-width:359px){.external-rudys-mark{max-width:72px}.external-logo-trademark{font-size:10px}}
 
 /* Gentle viewer transitions; image restrictions are interaction deterrents. */
 .artwork-dialog{opacity:0;transition:opacity 200ms ease}

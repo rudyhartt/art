@@ -29,6 +29,8 @@ Three transparent decorative accents float gently in existing empty gallery spac
 
 `fireflies.js` draws softly glowing white creatures in drifting clouds of small particles on the homepage and About page. Each creature has a translucent circular body and two fluttering translucent oval wings. A generated transparent white nebula texture (`assets/firefly-nebula.webp`) drifts behind each cloud of creatures at low opacity, with all mist drawn beneath the particles. Clouds are anchored throughout the document and move with the artwork as visitors scroll, while their gentle drift continues. A viewport-sized canvas draws only nearby clouds to keep memory use low. The decorative canvas sits between the waves and page content, receives no pointer input, and is hidden from assistive technology. Small screens use fewer creatures; reduced-motion preferences replace the animation with a sparse still field. Animation pauses while the page is hidden or the artwork viewer is open.
 
+Four original animated companions are interspersed between the homepage sections: a paper courier, cobalt thread creature, lantern moth and glass sprout keeper. Each uses a transparent 320 × 320 GIF (`assets/character-01.gif` through `character-04.gif`) and a matching static WebP selected automatically for reduced-motion preferences. Their separate decorative spaces keep artwork, captions and the existing story ribbon clear. They load lazily, ignore pointer input and scale down on mobile.
+
 ## Version checkpoints
 
 The `v2.3-backup` branch preserves the site with the WAR mural banner and exhibition introduction, before the firefly animation, at commit `024358f1226b5e42615572c2019569a138eacbf1`.

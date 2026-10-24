@@ -222,3 +222,14 @@ img,.artwork-link,.external-logo-link{-webkit-touch-callout:none;-webkit-user-dr
 .firefly-field{position:fixed;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;user-select:none;contain:strict}
 body.lightbox-open .firefly-field{visibility:hidden}
 @media(prefers-reduced-motion:reduce){.firefly-field{opacity:.6}}
+
+
+/* Small animated companions inhabit pauses between the artwork sections. */
+.character-interlude{--character-position:24%;position:relative;z-index:1;display:flex;align-items:center;width:calc(100% - var(--edge)*2);max-width:1512px;margin:0 auto 12px;padding-top:40px;pointer-events:none;user-select:none}
+.character-interlude-after-collection{margin-top:-40px}
+.character-companion{display:block;flex:none;width:clamp(130px,12vw,180px);aspect-ratio:1;margin-left:clamp(0px,var(--character-position),calc(100% - 180px));pointer-events:none}
+.character-companion>img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;-webkit-user-drag:none;-webkit-touch-callout:none}
+.character-interlude-02{--character-position:72%}
+.character-interlude-03{--character-position:34%}
+.character-interlude-04{--character-position:65%}
+@media(max-width:699px){.character-interlude{--character-position:15%;padding-top:22px;margin-bottom:16px}.character-interlude-after-collection{margin-top:-28px}.character-companion{width:clamp(88px,26vw,108px);margin-left:clamp(0px,var(--character-position),calc(100% - 108px))}.character-interlude-02{--character-position:60%}.character-interlude-03{--character-position:23%}.character-interlude-04{--character-position:55%}}

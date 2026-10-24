@@ -112,8 +112,8 @@ figure,h1,h2,p{margin:0}
 
 
 @media(min-width:1200px) and (max-width:1299px){.collection-section-four .collection-layout{grid-template-columns:minmax(0,.60fr) minmax(0,.40fr)}}
-@media(max-width:699px){.artist-identity{grid-column:1;grid-row:1}.header-store{grid-column:2;grid-row:1}.header-index{grid-column:1 / -1;grid-row:2;gap:26px;justify-content:center}.footer-end{gap:18px}}
-@media(max-width:359px){.header-index{gap:20px}}
+@media(max-width:699px){.artist-identity{grid-column:1;grid-row:1}.header-store{grid-column:2;grid-row:1}.header-index{grid-column:1 / -1;grid-row:2;gap:clamp(10px,3vw,18px);justify-content:center}.footer-end{gap:18px}}
+@media(max-width:359px){.header-index{gap:10px}}
 
 
 .footer-identity .practice-note{margin-top:18px}

@@ -4,6 +4,8 @@ A static artist portfolio on black, with nine images arranged in the supplied re
 
 ## Site files
 
+- `spaces.html` introduces spatial concepts, with RUDY’S as the first project. Eight existing concept renders show the street frontage, creative clubhouse, listening lounge, broadcast suite, brand objects, Vision Store, performance lounge and architectural cutaway. `spaces.css` controls the responsive full-image gallery, and `spaces-data.js` supplies descriptions and navigation for the shared image viewer. Spaces appears before Collections in the navigation on all three pages.
+
 - `about.html` presents the approved artist biography, Every image begins with a story headline, transparent silver-and-red ribbon and Explore the artwork link. `about.css` contains only About-page layout rules. The shared navigation, disabled Store button, footer and scroll-linked waves remain unchanged in appearance; About links to this page and Works/Collections return to the homepage anchors. Biography columns stack below 700px, and decorative motion respects reduced-motion preferences.
 
 - `index.html` includes all forty-seven artworks and five collection covers as semantic HTML images and viewer buttons. Without JavaScript, all gallery images and captions remain visible, while expanded viewing is unavailable.
@@ -49,7 +51,7 @@ CSS and JavaScript URLs in `index.html` and `about.html` include a version deriv
 
 The included `.github/workflows/pages.yml` publishes on a push to `main`. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**. Adjust `branches: [main]` if another branch is used.
 
-The workflow copies only `index.html`, `about.html`, `about.css`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `fireflies.js`, `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
+The workflow copies only `index.html`, `about.html`, `about.css`, `spaces.html`, `spaces.css`, `spaces-data.js`, `styles.css`, `app.js`, `artworks-data.js`, `moments.js`, `fireflies.js`, `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `.nojekyll` and `assets/` into the public artifact. This README is not deployed. The reference PDF, extraction metadata and local source files are not part of this directory.
 
 The same site can also be served by a static web host from the directory root. Page assets use relative paths; the social metadata identifies `https://rudyhartt.com/`. There are no remote fonts, tracking scripts or third-party embeds.
 

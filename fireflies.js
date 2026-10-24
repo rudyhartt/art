@@ -14,15 +14,14 @@
   let width = 0;
   let height = 0;
   let compact = false;
-  let clouds = [];
+  const cloudBands = new Map();
   let frameId = 0;
   let lastFrame = 0;
   let elapsed = 0;
   let running = false;
   let pageActive = true;
   let modalOpen = Boolean(dialog && dialog.open);
-  let scrollTarget = Math.max(0, window.scrollY);
-  let scrollPosition = scrollTarget;
+  let scrollPosition = Math.max(0, window.scrollY);
 
   // One small cached glow avoids creating gradients for every creature/frame.
   const halo = document.createElement('canvas');
@@ -44,8 +43,8 @@
     };
   }
 
-  function createClouds() {
-    const random = randomSource(2397);
+  function createClouds(band) {
+    const random = randomSource(2397 + band * 7919);
     const anchors = compact
       ? [[.17, .32], [.83, .76]]
       : [[.08, .28], [.92, .65], [.16, .83], [.73, .08]];
@@ -53,7 +52,7 @@
     const creatureCount = quiet ? 2 : compact ? 3 : 4;
     const moteCount = quiet ? 8 : compact ? 18 : 30;
     const spread = () => (random() + random() + random() - 1.5) / 1.5;
-    clouds = anchors.map(([x, y], index) => ({
+    return anchors.map(([x, y], index) => ({
       x,
       y,
       phase: index * 1.73 + random(),
@@ -104,33 +103,44 @@
   function draw(time) {
     context.clearRect(0, 0, width, height);
     const quiet = motion.matches;
-    const travel = quiet ? 0 : scrollPosition;
     const spanX = Math.min(width * (compact ? .31 : .16), compact ? 125 : 215);
     const spanY = Math.min(height * .16, compact ? 110 : 150);
+    const bandHeight = Math.max(600, height);
+    // Keep the canvas small, but anchor every cloud to the document itself.
+    // The margin covers the full cloud spread, glow, drift and orbit so clouds
+    // enter the viewport naturally rather than appearing at a band boundary.
+    const margin = 320;
+    const firstBand = Math.max(0, Math.floor((scrollPosition - margin) / bandHeight));
+    const lastBand = Math.floor((scrollPosition + height + margin) / bandHeight);
+    for (const band of cloudBands.keys()) {
+      if (band < firstBand || band > lastBand) cloudBands.delete(band);
+    }
 
-    for (const cloud of clouds) {
-      const driftX = quiet ? 0 : Math.sin(time * .09 + cloud.phase) * Math.min(width * .04, 62);
-      const driftY = quiet ? 0 : Math.cos(time * .075 + cloud.phase) * Math.min(height * .055, 48);
-      const parallaxX = quiet ? 0 : Math.sin(travel / 1100 + cloud.phase) * 12;
-      const parallaxY = quiet ? 0 : Math.sin(travel / 740 + cloud.phase) * 28;
-      const centerX = width * cloud.x + driftX + parallaxX;
-      const centerY = height * cloud.y + driftY - parallaxY;
+    for (let band = firstBand; band <= lastBand; band++) {
+      if (!cloudBands.has(band)) cloudBands.set(band, createClouds(band));
+      for (const cloud of cloudBands.get(band)) {
+        const driftX = quiet ? 0 : Math.sin(time * .09 + cloud.phase) * Math.min(width * .04, 62);
+        const driftY = quiet ? 0 : Math.cos(time * .075 + cloud.phase) * Math.min(height * .055, 48);
+        const centerX = width * cloud.x + driftX;
+        const centerY = bandHeight * (band + cloud.y) + driftY - scrollPosition;
+        if (centerY < -margin || centerY > height + margin) continue;
 
-      for (const mote of cloud.motes) {
-        const orbitX = quiet ? 0 : Math.sin(time * .29 + mote.phase) * 12;
-        const orbitY = quiet ? 0 : Math.cos(time * .23 + mote.phase) * 9;
-        const shimmer = quiet ? 1 : .83 + .17 * Math.sin(time * .45 + mote.phase);
-        context.globalAlpha = mote.opacity * shimmer;
-        context.fillStyle = '#fff';
-        context.beginPath();
-        context.arc(centerX + mote.x * spanX + orbitX, centerY + mote.y * spanY + orbitY, mote.radius, 0, tau);
-        context.fill();
-      }
+        for (const mote of cloud.motes) {
+          const orbitX = quiet ? 0 : Math.sin(time * .29 + mote.phase) * 12;
+          const orbitY = quiet ? 0 : Math.cos(time * .23 + mote.phase) * 9;
+          const shimmer = quiet ? 1 : .83 + .17 * Math.sin(time * .45 + mote.phase);
+          context.globalAlpha = mote.opacity * shimmer;
+          context.fillStyle = '#fff';
+          context.beginPath();
+          context.arc(centerX + mote.x * spanX + orbitX, centerY + mote.y * spanY + orbitY, mote.radius, 0, tau);
+          context.fill();
+        }
 
-      for (const creature of cloud.creatures) {
-        const orbitX = quiet ? 0 : Math.sin(time * .32 + creature.phase) * 22;
-        const orbitY = quiet ? 0 : Math.cos(time * .27 + creature.phase) * 16;
-        drawCreature(creature, centerX + creature.x * spanX + orbitX, centerY + creature.y * spanY + orbitY, time);
+        for (const creature of cloud.creatures) {
+          const orbitX = quiet ? 0 : Math.sin(time * .32 + creature.phase) * 22;
+          const orbitY = quiet ? 0 : Math.cos(time * .27 + creature.phase) * 16;
+          drawCreature(creature, centerX + creature.x * spanX + orbitX, centerY + creature.y * spanY + orbitY, time);
+        }
       }
     }
     context.globalAlpha = 1;
@@ -151,7 +161,6 @@
     if (delta >= frameInterval - .5) {
       elapsed += Math.min(delta / 1000, .08);
       lastFrame = now;
-      scrollPosition += (scrollTarget - scrollPosition) * .10;
       draw(elapsed);
     }
     frameId = window.requestAnimationFrame(tick);
@@ -159,6 +168,7 @@
 
   function synchronize() {
     stop();
+    scrollPosition = Math.max(0, window.scrollY);
     if (!pageActive || document.hidden || modalOpen) return;
     if (motion.matches) {
       draw(0);
@@ -178,19 +188,20 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    createClouds();
+    cloudBands.clear();
     synchronize();
   }
 
   window.addEventListener('resize', resize, { passive: true });
   window.addEventListener('scroll', () => {
-    if (!motion.matches) scrollTarget = Math.max(0, window.scrollY);
+    scrollPosition = Math.max(0, window.scrollY);
+    // Repaint in the scroll event so the clouds stay attached to the artwork,
+    // including in reduced-motion mode, without starting another RAF loop.
+    if (pageActive && !document.hidden && !modalOpen) draw(motion.matches ? 0 : elapsed);
   }, { passive: true });
   document.addEventListener('visibilitychange', synchronize);
   motion.addEventListener('change', () => {
-    scrollTarget = Math.max(0, window.scrollY);
-    scrollPosition = scrollTarget;
-    createClouds();
+    cloudBands.clear();
     synchronize();
   });
   window.addEventListener('pagehide', () => {
